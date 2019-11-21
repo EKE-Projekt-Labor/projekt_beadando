@@ -1,0 +1,5 @@
+<?php
+
+echo 'Helló világ! :)';
+
+?>
