@@ -16,9 +16,10 @@ xx
 xx
 
 ## Követelménylista
-A tananyagok feltölthetőek legyenek a tanárok által és ezt regisztráció nélkül bárki elérhesse. Ezt a tananyagot a tánor bármikor módosíthassák
-2. xx
-3. xx
+A tananyagok feltölthetőek legyenek a tanárok által és ezt regisztráció nélkül bárki elérhesse. Ezt a tananyagot a tánorok bármikor módosíthassák
+2. A diákok egy regisztrációt követően a tananyagból készült kérdésekre válaszolhatnak egy egyszerű felelet választós rendszerben ellenőrizhetik a tudásukat.
+3. A kérdésekre válaszolva egy rangsor alakul ki a diákok között amit midnen regisztrált tag láthat
+4. 
 
 ## Fogalomszótár
 xx
