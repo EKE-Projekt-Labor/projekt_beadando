@@ -7,7 +7,9 @@
 
 
 ## Vágyálomrendszer
-xx
+Egy olyan tanulást elősegítő platform létrehozása, ahol a tanuló az ismeretanyagot játékos formában sajátítja el. A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A játékos gyakorlatok is ezen a felületen hozhatók létre. A tesztekhez való feladatok (és válaszok) felhvihetők egy listára, ahonanan a számonkéréskor ezeket válogatja össze a rendszer. Az érétékelés automatikus, a beküldést követeően azonnal látható mind a diák, mind a tanár számára.
+
+A tananyag, a gyakorlás és a számonkérés is mindvégig egy online platformon zajlik, ami a ma felnövő generációnak szinte természetes. 
 
 ## Technikai követelmények
 xx
