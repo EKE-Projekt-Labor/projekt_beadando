@@ -1,7 +1,7 @@
 # Funkcionális specifikáció
 
 ## Bevezetés
-xx
+ Megrendlő részéről kaptunk egy olyan elképezlt weboldalt amely segíti a munkájukat, hogy a diákoknak könnyebben átadhassák a megfelelő tudusát és minnél több diákhoz elérjen a tananyag.
 
 ## Célok
 xx
