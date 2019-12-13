@@ -11,6 +11,10 @@ Egy olyan tanulást elősegítő platform létrehozása, ahol a tanuló az ismer
 
 A tananyag, a gyakorlás és a számonkérés is mindvégig egy online platformon zajlik, ami a ma felnövő generációnak szinte természetes. 
 
+## Megrendelői cél: 
+1. Interaktív digitális oktatás keretében megvalósuló játszva tanulás amely egyben segít a passzivitás megszüntetésében, figyelembe véve a fiatalabb gyermekek/tanulók igényeit. 
+2. Játékos feladatok melyek a fiatal diákok számára elősegítik a tanulást az interaktív feladatok keretében, emelett a rendszer képes legyen tárolni a felhasználók által elért eredményeket. Rangsorokat előállítva amely segítheti az oktatási folyamatokat és betekintést nyújthat az oktatók számára a diákok aktivitásáról, eredményeiről. 
+
 ## Technikai követelmények
 xx
 
