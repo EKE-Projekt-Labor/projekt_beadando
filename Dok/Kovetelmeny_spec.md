@@ -19,7 +19,7 @@ xx
 A tananyagok feltölthetőek legyenek a tanárok által és ezt regisztráció nélkül bárki elérhesse. Ezt a tananyagot a tánorok bármikor módosíthassák
 2. A diákok egy regisztrációt követően a tananyagból készült kérdésekre válaszolhatnak egy egyszerű felelet választós rendszerben ellenőrizhetik a tudásukat.
 3. A kérdésekre válaszolva egy rangsor alakul ki a diákok között amit midnen regisztrált tag láthat
-4. 
+4. Minden héten a rendszer győztest hírdet ki az aki a legtöbb kérdésre helyes választ adók között.
 
 ## Fogalomszótár
 xx
