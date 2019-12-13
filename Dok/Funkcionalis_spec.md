@@ -23,6 +23,9 @@ Tanárok által elérhető funkciók:
       - témaköröket(matek, fizika, informatika.. stb)
       - tananyagok
       - tesztanyagok, kérdések
+Diákok álatal elérhető funkciók
+  - tananyagok
+  - vizsgakérdések
 
 
 ## Használati esetek
