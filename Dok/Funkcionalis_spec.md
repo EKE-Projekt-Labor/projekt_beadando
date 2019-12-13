@@ -9,9 +9,6 @@ xx
 ## Jelenlegi helyzet
 xx
 
-## Vágyálomrendszer
-xx
-
 ## Követelménylista
 Felhasználói szintek:
  - regisztráció nélkül bárki elérheti a tananyagokat
