@@ -15,6 +15,14 @@ A tananyag, a gyakorlás és a számonkérés is mindvégig egy online platformo
 1. Interaktív digitális oktatás keretében megvalósuló játszva tanulás amely egyben segít a passzivitás megszüntetésében, figyelembe véve a fiatalabb gyermekek/tanulók igényeit. 
 2. Játékos feladatok melyek a fiatal diákok számára elősegítik a tanulást az interaktív feladatok keretében, emelett a rendszer képes legyen tárolni a felhasználók által elért eredményeket. Rangsorokat előállítva amely segítheti az oktatási folyamatokat és betekintést nyújthat az oktatók számára a diákok aktivitásáról, eredményeiről. 
 
+## Megrendelői követelmény:
+1. A kialakíott feladatokat, gyakorlatok könnyen átalakíthatóak és továbbfejleszthetőek legyenek. (tesztekhez, feladatsorok használatához alakítva). 
+A feladatsorok helyes megoldásainak tárolása, a tanuló válaszainak tárolása, ellenőrzése. (felhasználónként) 
+Feladatokhoz időlimit és pont rendelhető melyből kiszámolható az elért pontszám esetlegesen érdemjegy.
+2. A kitöltött feladatsorok pdf-be áttehetők legyenek. 
+3. A játékos feladatok megfelelő témákkal rendelkezzenek melyek elősegítik a digitális tesztanyagokhoz való készülést.
+A játékos feladatok is rendelkezzenek felhasználókra szabott pontszámozással amely legalább heti lebontásban frissül.
+
 ## Technikai követelmények
 xx
 
