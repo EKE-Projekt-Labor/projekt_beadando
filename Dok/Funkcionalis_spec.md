@@ -32,7 +32,8 @@ Diákok álatal elérhető funkciók
 xx
 
 ## Képernyőtervek
-xx
+A weboldalbetöltése után a munüben a tananyagok egyből elérhetővé válnak tananyagok és azon belül témakörök szerint csoportosítva
+A menü sorban helyet kap a log in rész is. 
 
 ## Forgatókönyvek
 xx
