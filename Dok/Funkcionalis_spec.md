@@ -13,9 +13,12 @@ xx
 xx
 
 ## Követelménylista
-1. xx
-2. xx
-3. xx
+Tanárok által elérhető funkciók:
+  - vihet fel a weben keresztül
+      -témaköröket(matek, fizika, informatika.. stb)
+      -tananyagok
+      -tesztanyagok, kérdések
+
 
 ## Használati esetek
 xx
