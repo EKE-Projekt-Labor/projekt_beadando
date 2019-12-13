@@ -24,9 +24,6 @@ Feladatokhoz időlimit és pont rendelhető melyből kiszámolható az elért po
 3. A játékos feladatok megfelelő témákkal rendelkezzenek melyek elősegítik a digitális tesztanyagokhoz való készülést.
 A játékos feladatok is rendelkezzenek felhasználókra szabott pontszámozással amely legalább heti lebontásban frissül.
 
-## Technikai követelmények
-xx
-
 ## Funkcionális követelmények
 xx
 
