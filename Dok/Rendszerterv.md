@@ -4,7 +4,8 @@
 xx
 
 ## 2. Projekt terv
-xx
+A projekt egy webalkalmazás, ami PHP alapokon nyugszik. E mellett HTML-t, CSS-t és JavaScript-et használunk. Az adatbázis pedig MySQL.
+A különböző részeken más-más emberek dolgoznak.
 
 ## 3. Üzleti folyamatok modellje
 xx
