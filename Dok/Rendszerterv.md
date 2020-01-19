@@ -167,7 +167,7 @@ Tesztesetek:
 
 Helyi gépre való telepítés esetén a következőkre lesz szükség:
 - Egy webszerver környezetre, ami tudja az Apache/PHP/MySQL hármast.
-- Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel elátott eszköz).
+- Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel ellátott eszköz).
 - Egy modern böngésző.
 
 Webtárhelyre való telepítés esetén a következőkre lesz szükség:
