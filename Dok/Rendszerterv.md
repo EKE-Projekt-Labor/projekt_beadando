@@ -46,7 +46,9 @@ A projekt absztrakció szempontjából két részre osztható fel:
 xx
 
 ## 9. Adatbázis terv
-xx
+Első körben 3 táblára van szükségünk. Egy kell a felhasználók adatainak tárolásához, egy a tananyagoknak, egy pedig a teszteknek.
+Utóbbihoz további táblák szükségesek: egy a kérdés/válaszok pároshoz és egy tábla, ahol a diákok által kitöltött válaszokat tároljuk.
+
 
 ## 10. Implementációs terv
 
