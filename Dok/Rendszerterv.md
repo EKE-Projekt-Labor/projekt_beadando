@@ -36,6 +36,13 @@ Menü architektúra:
 - Bejelentkezés
 - Regisztráció
 
+Bejelentkezés után további menüpontok érhetők el jogosultságtól függően:
+- Beállítások
+    - Új jelszó 
+    - Felhasználók (tanári jogosultsági szinttől)
+    - Osztályok (tanári jogosultsági szinttől)
+    - Kategóriák (tanári jogosultsági szinttől)
+
 ## 6. Fizikai környezet
 
 Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes operációs rendszer és az ehhez megfelelő hardverrel ellátott eszköz.
