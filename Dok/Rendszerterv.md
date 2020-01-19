@@ -31,7 +31,9 @@ Menühierarchia:
 
 ## 6. Fizikai környezet
 
-Egy modern böngészőt futtatni képes operációs rendszerre van szükség.
+Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes operációs rendszer és az ehhez megfelelő hardverrel elátott eszköz.
+
+Kliens oldalon egy modern böngészőt futtatni képes operációs rendszerre van szükség (és ettől függően egy megfelelő hardverrel elátott eszközre).
 Az oldal struktúrájáért a HTML, a megjelenítésért a CSS és az interakciókért a JavaScript felelős.
     
 ## 7. Absztrakt domain modell
