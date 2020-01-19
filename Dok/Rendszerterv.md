@@ -4,10 +4,10 @@
 
 A rendszer célja egy olyan tanulást elősegítő oldal létrehozása, ahol a tanuló az ismeretanyagot digitális formában sajátíthatja el, egy gyorsan és könynen használható felületen. 
 A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A tesztek is ezen a felületen hozhatók létre, ami egy megfelelő tananyaggal összekapcsolható. 
-A tesztekhez való feladatok (és válaszok) felvihetők egy listára, ahonnan a számonkéréskor ezeket válogatja össze a rendszer. 
 Az érétékelés automatikus, a beküldést követően azonnal látható mind a diák, mind a tanár számára.
 
 Az oldal használatához egy felhasználói fiók szükséges, ami regisztráció segítségével hozható létre és az itt megadott adatokkal lehet később bejelentkezni.
+
 Négy féle felhasználói van: a (sima) felhasználó, a tanuló, a tanár és az adminisztrátor. 
 - A (sima) felhasználónak kezdtben semmilyen jogosultsága nincsen. Egy tanár vagy adminisztrátor adhat neki tanulói, tanár vagy admin jogot. 
 - A tanuló eléri az osztályába tartozó témakörök tananyagait és a hozzájuk tartozó teszteket.
