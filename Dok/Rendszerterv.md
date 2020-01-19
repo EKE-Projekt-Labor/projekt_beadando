@@ -36,7 +36,9 @@ xx
 
 
 ## 12. Telepítési terv
-xx
+- Egy a Apache/PHP/MySQL hármast támogató tárhely.
+- Egy program, amivel FTP kapcsolaton keresztül feltölthetők a webalkalmazás fájljai.
+- Egy modern böngésző.
 
 ## 13. Karbantartási terv
 xx
