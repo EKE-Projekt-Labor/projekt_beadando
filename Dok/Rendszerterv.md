@@ -49,7 +49,29 @@ xx
 xx
 
 ## 10. Implementációs terv
-xx
+
+Backend részen a kiszolgáló egy PHP-ban készült szolgáltatás lesz.
+
+Metódusai:
+
+ - Regisztráció
+ - Login
+ - Logout
+ - Jelszóváltoztatás
+ - Tananyagok létrehozása,
+   - olvasás
+   - új/szerkesztése
+   - törlése
+ - Tesztek létrehozása, módosítása
+   - eredmények megjelenítése (felhasználókra bontva)
+   - teszt és eredmények törlése
+ - Jogosultságok kiosztása a tananyag és teszt hozzáférésekhez (tanári és admin fiók)
+
+Web
+
+A Webes felület főként PHP, CSS - BootStrap, és JS alappal készül.
+Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és így csatoljuk egymáshoz őket a jobb átláthatóság, 
+könnyebb változtathatóság, és könnyebb bővítés érdekében. Backenden megírt funkciók segítségével képes felvinni és lekérdezni adatokat az adatbázisból.
 
 ## 11. Tesztterv
 A fejlesztés során folyamatos tesztelésre van szükség, hogy az estleges hibákat még idejében felismerjük és javítsuk, lekezeljük.
