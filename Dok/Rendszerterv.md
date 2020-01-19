@@ -67,6 +67,7 @@ Az oldal MySQL adatbázis fog használni, ide kerülnek fel majd a felhasználó
 Első körben 3 táblára van szükségünk. Egy kell a felhasználók adatainak tárolásához, egy a tananyagoknak, egy pedig a teszteknek.
 Utóbbihoz további táblák szükségesek: egy a kérdés/válaszok pároshoz és egy tábla, ahol a diákok által kitöltött válaszokat tároljuk.
 A végső állapotában az alábbi 7 táblát alakítottuk ki.
+
 **User** **Tábla** (A felhasználók adatait leíró tábla):
 
 - **id**: A felhasználó azonosítója *int* típusú mező.
