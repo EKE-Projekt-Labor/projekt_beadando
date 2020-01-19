@@ -33,8 +33,9 @@ Tanulók álatal elérhető funkciók
 xx
 
 ## Képernyőtervek
-A weboldalbetöltése után a munüben a tananyagok egyből elérhetővé válnak tananyagok és azon belül témakörök szerint csoportosítva
-A menü sorban helyet kap a log in rész is. 
+
+A weboldalbetöltése után a Tananyagok menüre kattintva egyből elérhetővé válnak tananyagok, amik melett olvashatók a témakörök.
+A menü sorban helyet kap a bejelentkezés rész is. 
 
 ## Forgatókönyvek
 xx
