@@ -137,8 +137,8 @@ könnyebb változtathatóság, és könnyebb bővítés érdekében. Backenden m
 ## 11. Tesztterv
 A fejlesztés során folyamatos tesztelésre van szükség, hogy az estleges hibákat még idejében felismerjük és javítsuk, lekezeljük.
 
-Szükség van az interkaciókért felelős elemek (gombok, linkek, űrlapok, stb.) folyamatos és több szempontból megközelített tesztelésére.
-Nem elég egyszer, egyfajta adattal kipróbálni. Gondolni kell a hibásan megadaott adatok lehetőségére is.
+Szükség van az interakciókért felelős elemek (gombok, linkek, űrlapok, stb.) folyamatos és több szempontból megközelített tesztelésére.
+Nem elég egyszer, egyfajta adattal kipróbálni. Gondolni kell a hibásan megadott adatok lehetőségére is.
 Ellenőrizni kell, hogy ahol hibák jöhetnek elő ott azok megfelelően levannak-e kezelve.
 A felhasználóhoz nem juthat vissza működési hiba.
 
@@ -150,11 +150,11 @@ Tesztesetek:
 | TEST_002  | A regisztrációs felület elérése | A felület legyen elérhető |
 | TEST_004  | A regisztrációs felület kipróbálása helyes adatokkal | Sikeres regisztráció |
 | TEST_005  | A regisztrációs felület kipróbálása helytelen adatokkal | Sikertelen regisztráció, hiba jelzése |
-| TEST_006  | A regisztrációs felület kipróbálása létező felhasználói adatokkal | Sikertelen regisztáció, hiba jelzése |
+| TEST_006  | A regisztrációs felület kipróbálása létező felhasználói adatokkal | Sikertelen regisztráció, hiba jelzése |
 | TEST_007  | A bejelentkező felület elérése | A felület legyen elérhető |
 | TEST_008  | A bejelentkező felület kipróbálása helyes adatokkal | Sikeres bejelentkezés |
 | TEST_009  | A bejelentkező felület kipróbálása helytelen adatokkal | Sikertelen bejelentkezés, hiba jelzése |
-| TEST_010  | A bejelentkező felület kipróbálása nem létező felhasználói adatokkal | Sikertelen bejelntkezés, nem létező felhasználó jelzése |
+| TEST_010  | A bejelentkező felület kipróbálása nem létező felhasználói adatokkal | Sikertelen bejelentkezés, nem létező felhasználó jelzése |
 | TEST_011  | A tananyagok oldal elérése |  A felület legyen elérhető |
 | TEST_012  | A tananyag kipróbálása |  |
 | TEST_014  | A tesztek oldal elérése |  A felület legyen elérhető |
