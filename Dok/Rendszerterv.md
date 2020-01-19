@@ -13,9 +13,9 @@ Két féle felhasználói van: az adminisztrátor és a diák. Az előbbi minden
 ## 2. Projekt terv
 A projekt egy webalkalmazás, ami PHP alapokon nyugszik. E mellett HTML-t, CSS-t és JavaScript-et használunk. Az adatbázis pedig MySQL.
 A különböző részeken más-más emberek dolgoznak.
-Ahoz naprakészen rendelkezésre álljon mindenkinél az aktuális project GIT-et használunk.
+Ahhoz naprakészen rendelkezésre álljon mindenkinél az aktuális project GIT-et használunk.
 Kommunikációra Discordot.
-Az egyes feldatokat pedig Trello-ban követjük.
+Az egyes feladatokat pedig Trello-ban követjük.
 
 ## 3. Üzleti folyamatok modellje
 xx
