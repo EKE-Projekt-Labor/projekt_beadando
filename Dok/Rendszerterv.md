@@ -22,7 +22,19 @@ Kommunikációra Discordot.
 Az egyes feladatokat pedig Trello-ban követjük.
 
 ## 3. Üzleti folyamatok modellje
-xx
+- Üzleti Szereplők:
+  - Felhasználók: A szerepkör a webes felületen való regisztrációval jön létre. Sikeres regisztrációt követően minden felhasználó jogosultságot kap. Ez a jogosultsági szint határozza meg, hogy milyen funkciókat ér el a weboldalon.
+    - Oktatók: Azok a felhasználók akik olyan jogosultsággal rendelkeznek, amellyel képesek új tananyagot és teszteket feltölteni. 
+    - Diákok: Azok a felhasználók akik olyan jogosultsággal rendelkeznek, amellyel a teszteket tölthetnek ki és annak eredményeit nézhetik meg.
+    - Adminisztrátor: Teljes hozzáférés az összes funkcióhoz. Tananyagok és tesztek teljes körű menedzselése. Felhasználói fiókok kezelése.
+- Támogatandó üzleti folyamatok:
+  - Felhasználó azonosítás: 
+  - Felhasználó Regisztráció:
+  - Jelszó visszaállítás:
+  - Tananyag feltöltése:
+  - Tesztek feltöltése:
+  - Tesztek megírása:
+  - Tesztek eredménye:
 
 ## 4. Követelmények
 
