@@ -10,19 +10,23 @@ xx
 xx
 
 ## Követelménylista
+
 Felhasználói szintek:
- - regisztráció nélkül bárki elérheti a tananyagokat
- - regisztrálhat diákként melyhez szükséges egy diákigazovány szám megadás így elérheti a tanayagokat és a hozzájuk tartozó ellenőrző kérdéseket is
- - tanárként regisztráláshoz szükség lesz egy egyedi azonosítóval rendelkezni a rendszer innen fogja tudni hogy a felhasználó szerkesztheti a weboldalt.
+- látogatóként és firss regsiztrált felhasználóként csak a kezdőlap látható, illetve a regisztráció és a bejelentkezés
+- tanuló jogosultságot a tanár és az adminisztrátor adhasson
+- tanulóként elérhetők az osztályába tartozó tananyagok és ellenőrző kérdések
+- tanárkén létrehozhatók a tananyagok és a tesztek, illetve kezelheti a tanulókat
+- az adminisztrátornak mindenhez van jogosultsága
   
 Tanárok által elérhető funkciók:
   - vihet fel a weben keresztül
-      - témaköröket(matek, fizika, informatika.. stb)
-      - tananyagok
+      - témaköröket (matematika, fizika, informatika, stb)
+      - tananyagokat
       - tesztanyagok, kérdések
-Diákok álatal elérhető funkciók
+
+Tanulók álatal elérhető funkciók
   - tananyagok
-  - vizsgakérdések
+  - tesztek
 
 
 ## Használati esetek
