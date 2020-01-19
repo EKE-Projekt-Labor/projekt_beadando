@@ -1,7 +1,14 @@
 # Rendszerterv
 
 ## 1. Rendszer célja
-xx
+
+A rendszer célja egy olyan tanulást elősegítő oldlal létrehozása, ahol a tanuló az ismeretanyagot játékos formában sajátítja el. 
+A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A játékos gyakorlatok is ezen a felületen hozhatók létre. 
+A tesztekhez való feladatok (és válaszok) felhvihetők egy listára, ahonanan a számonkéréskor ezeket válogatja össze a rendszer. 
+Az érétékelés automatikus, a beküldést követeően azonnal látható mind a diák, mind a tanár számára.
+
+Az oldal használatához egy felhasználói fiók szükséges, ami regisztráció segítségével hozható létre és az itt megadott adatokkal lehet később bejelentkezni.
+Két féle felhasználói van: az adminisztrátor és a diák. Az előbbi mindenhez hozzáfér, kezelheti a tananyagokat és teszteket is. Az utóbbi pedig aktívan használhatja őket.
 
 ## 2. Projekt terv
 A projekt egy webalkalmazás, ami PHP alapokon nyugszik. E mellett HTML-t, CSS-t és JavaScript-et használunk. Az adatbázis pedig MySQL.
