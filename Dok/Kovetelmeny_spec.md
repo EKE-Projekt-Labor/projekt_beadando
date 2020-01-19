@@ -18,11 +18,17 @@ A tananyag, a gyakorlás és a számonkérés is mindvégig egy online platformo
 
 ## Megrendelői követelmény:
 1. A kialakíott feladatokat, gyakorlatok könnyen átalakíthatóak és továbbfejleszthetőek legyenek. (tesztekhez, feladatsorok használatához alakítva). 
-A feladatsorok helyes megoldásainak tárolása, a tanuló válaszainak tárolása, ellenőrzése. (felhasználónként) 
-Feladatokhoz időlimit és pont rendelhető melyből kiszámolható az elért pontszám esetlegesen érdemjegy.
-2. A kitöltött feladatsorok pdf-be áttehetők legyenek. 
-3. A játékos feladatok megfelelő témákkal rendelkezzenek melyek elősegítik a digitális tesztanyagokhoz való készülést.
-A játékos feladatok is rendelkezzenek felhasználókra szabott pontszámozással amely legalább heti lebontásban frissül.
+
+ - A feladatsorok helyes megoldásainak tárolása, a tanuló válaszainak tárolása, ellenőrzése. (felhasználónként) 
+ 
+ - Feladatokhoz időlimit és pont rendelhető melyből kiszámolható az elért pontszám esetlegesen érdemjegy.
+ - Tesztek létrehozási lehetősége, százalék alapú kiértékeléssel, felhasználókra bontva.
+ 
+ - A létrehozott feladatok és tesztek tárolása adatbázisben, szerkeszthetősége a webes felületen keresztül a tanárok és adminisztárotorok 
+   számára és adott tananyag és teszt törlési lehetőség.
+   
+2. A feladatok megfelelő témákkal rendelkezzenek melyek elősegítik a digitális tesztanyagokhoz való készülést.
+A feladatok is rendelkezzenek felhasználókra szabott pontszámozással amely legalább heti lebontásban frissül.
 
 ## Funkcionális követelmények
 xx
