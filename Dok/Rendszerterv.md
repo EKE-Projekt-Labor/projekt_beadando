@@ -41,6 +41,8 @@ Az oldal struktúrájáért a HTML, a megjelenítésért a CSS és az interakci�
     
 ## 7. Absztrakt domain modell
 
+![Absztrakt domain modell](https://raw.githubusercontent.com/EKE-Projekt-Labor/projekt_beadando/master/Dok/Absztrakt_domain_modell.png)
+
 A projekt absztrakció szempontjából két részre osztható fel:
 - Felhasználó
 - Szerver
