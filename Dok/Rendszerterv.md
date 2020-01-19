@@ -18,7 +18,9 @@ A különböző részeken más-más emberek dolgoznak.
 xx
 
 ## 4. Követelmények
-xx
+
+Egy PHP-t futtatni képes webszerver, MySQL adatbázissal.
+Egy modern böngésző.
 
 ## 5. Funkcionális terv
 xx
