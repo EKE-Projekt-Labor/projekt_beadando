@@ -2,10 +2,10 @@
 
 ## 1. Rendszer célja
 
-A rendszer célja egy olyan tanulást elősegítő oldlal létrehozása, ahol a tanuló az ismeretanyagot játékos formában sajátítja el. 
+A rendszer célja egy olyan tanulást elősegítő oldal létrehozása, ahol a tanuló az ismeretanyagot játékos formában sajátítja el. 
 A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A játékos gyakorlatok is ezen a felületen hozhatók létre. 
-A tesztekhez való feladatok (és válaszok) felhvihetők egy listára, ahonanan a számonkéréskor ezeket válogatja össze a rendszer. 
-Az érétékelés automatikus, a beküldést követeően azonnal látható mind a diák, mind a tanár számára.
+A tesztekhez való feladatok (és válaszok) felvihetők egy listára, ahonnan a számonkéréskor ezeket válogatja össze a rendszer. 
+Az érétékelés automatikus, a beküldést követően azonnal látható mind a diák, mind a tanár számára.
 
 Az oldal használatához egy felhasználói fiók szükséges, ami regisztráció segítségével hozható létre és az itt megadott adatokkal lehet később bejelentkezni.
 Két féle felhasználói van: az adminisztrátor és a diák. Az előbbi mindenhez hozzáfér, kezelheti a tananyagokat és teszteket is. Az utóbbi pedig aktívan használhatja őket.
@@ -39,6 +39,7 @@ Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes oper�
 Kliens oldalon egy modern böngészőt futtatni képes operációs rendszerre van szükség (és ettől függően egy megfelelő hardverrel elátott eszközre).
 Az oldal struktúrájáért a HTML, a megjelenítésért a CSS és az interakciókért a JavaScript felelős.
     
+
 ## 7. Absztrakt domain modell
 
 ![Absztrakt domain modell](https://raw.githubusercontent.com/EKE-Projekt-Labor/projekt_beadando/master/Dok/Absztrakt_domain_model.png) 
