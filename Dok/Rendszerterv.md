@@ -30,7 +30,9 @@ Menühierarchia:
     - Regisztráció
 
 ## 6. Fizikai környezet
-xx
+
+Egy modern böngészőt futtatni képes operációs rendszerre van szükség.
+Az oldal struktúrájáért a HTML, a megjelenítésért a CSS és az interakciókért a JavaScript felelős.
     
 ## 7. Absztrakt domain modell
 xx
