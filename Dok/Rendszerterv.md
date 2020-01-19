@@ -26,7 +26,7 @@ Egy PHP-t futtatni képes webszerver, MySQL adatbázissal.
 Egy modern böngésző.
 
 ## 5. Funkcionális terv
-Menü architektura:
+Menü architektúra:
 - Tananyagok
 - Tesztek
 - Bejelentkezés
