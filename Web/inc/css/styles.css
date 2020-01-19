@@ -1,0 +1,44 @@
+/* Általános */
+body{ font: 14px sans-serif; text-align: center; padding-top: 80px; }
+
+
+/* Design */
+.navbar { margin-bottom: 20px; }
+.jumbotron { padding: 2rem 2rem; }
+form.c {
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+}
+form.c div.form-group:last-of-type {
+	text-align: center;
+}
+form.c p:last-of-type {
+	text-align: center;
+}
+a.btn img { filter: invert(1); }
+
+
+/* Táblázatok */
+table { width: 100%; }
+table td, table th { height: 80px; border-bottom: 1px solid #999; padding: 7px;}
+table th { text-align: left; }
+table th:last-child { width: 300px; text-align: center; }
+
+/* Teszt */
+div.qb { margin-bottom: 15px; width: 500px; text-align: left; }
+div.qb input { margin: 2px; }
+div.qb input[type="text"][name*="[q]"] { width: 90%; display: inline-block; }
+div.qb input[type="radio"][name*="[a]"] { display: inline-block; }
+div.qb input[type="text"][name*="[a"], div.qb label.a { width: 40%; display: inline-block; }
+div.qb label.a { padding: 7px; margin: 3px; background: rgba(150,150,150,0.2); position: relative; }
+div.qb label.a label { display: block; }
+div.qb input[type="radio"][name*="[a]"]:checked + label { background: rgba(100,150,255,0.5); }
+div.qb input.correct + label { background: rgba(100,255,100,0.5) !important; position:relative; }
+div.qb input.correct + label::after { content:"✓"; color: rgba(0,111,0,1); position:absolute; top:0px; right:5px; font-size:150%; }
+div.qb input.gooda + label { background: rgba(100,255,100,0.5); }
+div.qb input.wrong + label { box-shadow: 0 0 0 3px rgba(255,100,100,0.8) inset; }
+div.qb span.q { display: inline-block; margin: 10px 0 10px 0; font-size: 130%; font-weight: bold; }
+span.eredmeny { font-size: 150%; }
+
+
