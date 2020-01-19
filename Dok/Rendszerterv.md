@@ -13,6 +13,9 @@ Két féle felhasználói van: az adminisztrátor és a diák. Az előbbi minden
 ## 2. Projekt terv
 A projekt egy webalkalmazás, ami PHP alapokon nyugszik. E mellett HTML-t, CSS-t és JavaScript-et használunk. Az adatbázis pedig MySQL.
 A különböző részeken más-más emberek dolgoznak.
+Ahoz naprakészen rendelkezésre álljon mindenkinél az aktuális project GIT-et használunk.
+Kommunikációra Discordot.
+Az egyes feldatokat pedig Trello-ban követjük.
 
 ## 3. Üzleti folyamatok modellje
 xx
@@ -23,7 +26,7 @@ Egy PHP-t futtatni képes webszerver, MySQL adatbázissal.
 Egy modern böngésző.
 
 ## 5. Funkcionális terv
-Menühierarchia:
+Menü architektura:
     - Tananyagok
     - Tesztek
     - Bejelentkezés
@@ -37,6 +40,8 @@ Kliens oldalon egy modern böngészőt futtatni képes operációs rendszerre va
 Az oldal struktúrájáért a HTML, a megjelenítésért a CSS és az interakciókért a JavaScript felelős.
     
 ## 7. Absztrakt domain modell
+
+![Absztrakt domain modell](https://raw.githubusercontent.com/EKE-Projekt-Labor/projekt_beadando/master/Dok/Absztrakt_domain_model.png) 
 
 A projekt absztrakció szempontjából két részre osztható fel:
 - Felhasználó
@@ -133,6 +138,8 @@ A fejlesztés során folyamatos tesztelésre van szükség, hogy az estleges hib
 
 Szükség van az interkaciókért felelős elemek (gombok, linkek, űrlapok, stb.) folyamatos és több szempontból megközelített tesztelésére.
 Nem elég egyszer, egyfajta adattal kipróbálni. Gondolni kell a hibásan megadaott adatok lehetőségére is.
+Ellenőrizni kell, hogy ahol hibák jöhetnek elő ott azok megfelelően levannak-e kezelve.
+A felhasználóhoz nem juthat vissza működési hiba.
 
 Tesztesetek:
 
