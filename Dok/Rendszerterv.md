@@ -176,8 +176,8 @@ Webtárhelyre való telepítés esetén a következőkre lesz szükség:
 - Egy modern böngésző.
 
 ## 13. Karbantartási terv
-A platform nem igényel jelentős karbantartást. Főként az adatok és az adatbázis szerver felügyeletével kapcsolatos teendők kapcsolódhatnak a karbantatárshoz. 
-Ügyenlni kell a terheltség folyamatos monitorozására. Bejövő adatbázis requesteket monitorozni kell, és esetenként optimalizálni amennyiben nagy a terheltség.
-Elavult, valamint már nem releváns tanyangok vagy tesztek esetében a megfelelő jogosultsággal
-rendelkező felhasználók bármikor módosíthatják vagy törölhetik, így ez nem igényel külsős segítségét. 
+A platform nem igényel jelentős karbantartást. Főként az adatok és az adatbázis szerver felügyeletével kapcsolatos teendők kapcsolódhatnak a karbantartáshoz. 
+Ügyelni kell a terheltség folyamatos monitorozására. Bejövő adatbázis requesteket monitorozni kell, és esetenként optimalizálni amennyiben nagy a terheltség.
+Elavult, valamint már nem releváns tananyagok vagy tesztek esetében a megfelelő jogosultsággal
+rendelkező felhasználók bármikor módosíthatják vagy törölhetik, így ez nem igényel külsös segítségét. Funkcionalitás bővítése esetén merülhetnek fel problémák, ezen problémák elkerülésének érdekében bővítés esetén precízen kell megtervezni az új verziókat.
 
