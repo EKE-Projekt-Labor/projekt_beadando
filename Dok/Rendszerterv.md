@@ -60,7 +60,10 @@ A projekt absztrakció szempontjából két részre osztható fel:
 - Szerver
 
 ## 8. Architekturális terv
-xx
+
+A rendszer folyamatosan bővíthető a tanárok által. Új tananyagot és tesztet hozhatnak létre vagy módosíthatják a már meglévőket.
+
+Biztonsági funkciók közé tartozik, hogy van adminisztrátir fiók. Az adminisztrátor minden regisztrált felhasználó adatát láthatja és kezelheti, kivéve a jelszót, mivel az titkosítva van eltárolva. Minden felhasználó csak a saját adatait módosíthatja.
 
 ## 9. Adatbázis terv
 Az oldal MySQL adatbázis fog használni, ide kerülnek fel majd a felhasználói adatok, a tanagyagokkal és a tesztekkel kapcsolatos adatok.
