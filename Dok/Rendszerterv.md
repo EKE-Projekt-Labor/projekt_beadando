@@ -36,6 +36,13 @@ xx
 
 
 ## 12. Telepítési terv
+
+Helyi gépre való telepítés esetén a következőkre lesz szükség:
+- Egy webszerver környezetre, ami tudja az Apache/PHP/MySQL hármast.
+- Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel elátott eszköz).
+- Egy modern böngésző.
+
+Webtárhelyre való telepítés esetén a következőkre lesz szükség:
 - Egy a Apache/PHP/MySQL hármast támogató tárhely.
 - Egy program, amivel FTP kapcsolaton keresztül feltölthetők a webalkalmazás fájljai.
 - Egy modern böngésző.
