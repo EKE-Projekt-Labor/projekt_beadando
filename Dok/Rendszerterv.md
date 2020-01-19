@@ -46,8 +46,61 @@ A projekt absztrakció szempontjából két részre osztható fel:
 xx
 
 ## 9. Adatbázis terv
+Az oldal MySQL adatbázis fog használni, ide kerülnek fel majd a felhasználói adatok, a tanagyagokkal és a tesztekkel kapcsolatos adatok.
 Első körben 3 táblára van szükségünk. Egy kell a felhasználók adatainak tárolásához, egy a tananyagoknak, egy pedig a teszteknek.
 Utóbbihoz további táblák szükségesek: egy a kérdés/válaszok pároshoz és egy tábla, ahol a diákok által kitöltött válaszokat tároljuk.
+A végső állapotában az alábbi 7 táblát alakítottuk ki.
+**User** **Tábla** (A felhasználók adatait leíró tábla):
+
+- **id**: A felhasználó azonosítója *int* típusú mező.
+- **username**: A felhasználó felhasználónevét tároló ***varchar*** típusú mező.
+- **password**: A felhasználó hashelt jelszavát tároló ***varchar*** típusú mező.
+- **created_at**: A felhasználó fiókjának készítésének idejét tároló ***timestamp*** típusú mező.
+- **permission**: A felhasználó jogosultságát tároló ***tinyiint*** típusú mező.
+- **ClassID**: A felhasználó osztályának azonosítóját tároló ***int*** típusú mező.
+
+**User_class** Tábla (A felhasználóhoz tartozó osztályokat leíró tábla):
+
+- **ID**: Az osztály azonosítóját tároló ***int*** típusú mező.
+- **Name**: A osztály nevét tároló ***varchar*** típusú mező.
+
+**Curriculum** **Tábla** (A tantervet leíró tábla):
+
+- **ID**: A tanterv azonosítóját tároló int típusú mező.
+- **CategoryID**: A tanterv kategóriájának azonosítóját tároló ***int*** típusú mező.
+- **CreatorID**: A tanterv készítőjének azonosítóját tároló ***int*** típusú mező.
+- **Name**: A tanterv megnevezését tároló ***varchar*** típusú mező.
+- **Content**: A tanterv leírását tároló ***varchar*** típusú mező.
+- **ClassID**: A tanterv osztályspecifikus azonosítójához tartozó ***int*** típusú mező.
+
+**Curriculum_category** **Tábla** (A tantervhez tartozó kategóriákat leíró tábla):
+
+- **ID**: A tanterv kategóriájának azonosítóját tároló ***int*** típusú mező.
+- **Name**: A tanterv kategóriájának nevét tároló ***varchar*** típusú mező.
+
+**Curriculum_read** **Tábla** (A felhasználó által olvasott tananyaggal kapcsolatos adatokat leíró tábla):
+
+- **ID:** A tananyag olvasásához tartozó adatok azonosítóját tároló ***int*** típusú mező.
+- **CurriculumID:** A tananyag azonosítóját tároló ***int*** típusú mező.
+- **UserID:** A felhasználó azonosítóját tároló ***int*** típusú mező.
+- **Last:** A felhasználó által olvasott tananyag utolsó oldalnak az oldalszámát tároló ***int*** típusú mező.
+- **Max:** A felhasználó által olvasott tananyag legnagyobb által megnézett oldalszámot tároló ***int*** típusú mező.
+
+**Test Tábla** (A teszteket leíró tábla):
+
+- **ID:** A teszt azonosítóját tároló ***int*** típusú mező.
+- **CurriculumID:** A teszthez tartozó tanterv azonosítóját tároló ***int*** típusú mező.
+- **Name:** A teszt megnevezését tároló ***varchar*** típusú mező.
+- **Content:** A teszt tartalmi anyagát tároló ***varchar*** típusú mező.
+
+**Test_solver Tábla** (A tesztek megoldásával kapcsolatos adatokat leíró tábla):
+
+- **ID:** A teszt megoldások azonosítóját tároló ***int*** típusú mező.
+- **TestID:** A teszt azonosítóját tároló ***int*** típusú mező.
+- **UserID:** A felhasználó azonosítóját tároló ***int*** típusú mező.
+- **Answers:** A megoldásokat tároló ***varchar*** típusú mező.
+- **Date:** A teszt megoldásának beküldési idejét tároló ***timestamp*** típusú mező. 
+
 
 
 ## 10. Implementációs terv
