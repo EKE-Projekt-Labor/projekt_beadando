@@ -123,10 +123,9 @@ A végső állapotában az alábbi 7 táblát alakítottuk ki.
 
 ## 10. Implementációs terv
 
-Backend részen a kiszolgáló egy PHP-ban készült szolgáltatás lesz.
+**Backend** részen a kiszolgáló egy PHP-ban készült szolgáltatás lesz.
 
-Metódusai:
-
+Funkciók:
  - Regisztráció
  - Login
  - Logout
@@ -140,7 +139,7 @@ Metódusai:
    - teszt és eredmények törlése
  - Jogosultságok kiosztása a tananyag és teszt hozzáférésekhez (tanári és admin fiók)
 
-Web
+**Frontend**
 
 A Webes felület főként PHP, CSS - BootStrap, és JS alappal készül.
 Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és így csatoljuk egymáshoz őket a jobb átláthatóság, 
