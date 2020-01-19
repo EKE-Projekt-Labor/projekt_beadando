@@ -27,10 +27,10 @@ Egy modern böngésző.
 
 ## 5. Funkcionális terv
 Menü architektura:
-    - Tananyagok
-    - Tesztek
-    - Bejelentkezés
-    - Regisztráció
+- Tananyagok
+- Tesztek
+- Bejelentkezés
+- Regisztráció
 
 ## 6. Fizikai környezet
 
