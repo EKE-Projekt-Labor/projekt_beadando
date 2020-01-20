@@ -48,7 +48,7 @@ Menü architektúra:
 - Bejelentkezés
 - Regisztráció
 
-Bejelentkezés után további menüpontok érhetők el jogosultságtól függően:
+Bejelentkezés után további menü pontok érhetők el jogosultságtól függően:
 - Beállítások
     - Új jelszó 
     - Felhasználók (tanári jogosultsági szinttől)
