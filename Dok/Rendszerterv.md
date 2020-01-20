@@ -36,6 +36,11 @@ Az egyes feladatokat pedig Trello-ban követjük.
        bevitel amennyiben igen sikeresen tovább jut a fájl lista felületre
        ellenkező esetben pedig a megfelelő hiba üzenetet kapja a felhasználó.
   - Felhasználó regisztráció:
+    - A felhasználónak ki kell tölteni a regisztrációhoz szükséges űrlapot bizonyos megkötésökkel. Az űrlap kitöltéséhez az alábbi adatokat kell megadni:
+  
+      - Felhasználónév: Egyedinek kell lennie. (Két azonos felhasználónév nem létezhet.)
+      - Jelszó: Minimum 6 karakternek kell lennie.
+      - Jelszó megerősítésé: Megegyezik a Jelszóval.
   - Jelszó visszaállítás:
   - Tananyag feltöltése:
   - Tesztek feltöltése:
