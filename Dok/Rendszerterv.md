@@ -29,6 +29,12 @@ Az egyes feladatokat pedig Trello-ban követjük.
     - Adminisztrátor: Teljes hozzáférés az összes funkcióhoz. Tananyagok és tesztek teljes körű menedzselése. Felhasználói fiókok kezelése.
 - Támogatandó üzleti folyamatok:
   - Felhasználó azonosítás: 
+    - A felhasználó beviszi a nevét és jelszavát a webes felületre majd 
+       a program megvizsgálja hogy létezik-e ilyen felhasználó az adatbázisban
+       amennyiben igen a jelszóra használja a megfelelő titkosítási algoritmust
+       és megvizsgálja hogy a felhasználóhoz tárolt jelszó megegyezik-e a 
+       bevitel amennyiben igen sikeresen tovább jut a fájl lista felületre
+       ellenkező esetben pedig a megfelelő hiba üzenetet kapja a felhasználó.
   - Felhasználó regisztráció:
   - Jelszó visszaállítás:
   - Tananyag feltöltése:
