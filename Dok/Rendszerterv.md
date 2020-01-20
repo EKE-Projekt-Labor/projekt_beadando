@@ -53,7 +53,17 @@ Az egyes feladatokat pedig Trello-ban követjük.
   
   - Tananyag feltöltése:
   
+    - Letőség van a tanároknak új tananyagokat feltölteni. Ezeket az alábbi funkciókat lehet találni:
+  
+      - Létrehozás
+      - Frissítés
+      - Módosítás
+  
+      Ezeket a tananyagokat tudják elolvasni a diákok, és az ebből származó információt tudják használni a tesztek megírása során.
+  
   - Tesztek feltöltése:
+  
+    - Lehetőséget biztosit ellenőrző kérdések "Tesztek" létrehozása. 
   
   - Tesztek megírása:
   
