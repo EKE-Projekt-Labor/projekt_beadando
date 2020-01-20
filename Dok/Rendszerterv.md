@@ -49,6 +49,8 @@ Az egyes feladatokat pedig Trello-ban követjük.
   
   - Jelszó visszaállítás:
   
+    - Lehetőséget biztosít, hogy ha a felhasználó elfelejtette a felhasználójához tartozó jelszót, párgombnyomással vissza tudja állitani. Az új jelszónak is meg kell felelni a regisztrációkor felsorolt tényezőknek. (Jelszó: Minimum 6 karakternek kell lennie / Jelszó megerősítésé: Megegyezik a Jelszóval.) Majd az új jelszó ismételten a bizonyságra ügyelve felül íródik az adott felhasználójában.
+  
   - Tananyag feltöltése:
   
   - Tesztek feltöltése:
