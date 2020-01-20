@@ -2,17 +2,17 @@
 
 ## 1. Rendszer célja
 
-A rendszer célja egy olyan tanulást elősegítő oldal létrehozása, ahol a tanuló az ismeretanyagot digitális formában sajátíthatja el, egy gyorsan és könynen használható felületen. 
+A rendszer célja egy olyan tanulást elősegítő oldal létrehozása, ahol a tanuló az ismeretanyagot digitális formában sajátíthatja el, egy gyorsan és könnyen használható felületen. 
 A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A tesztek is ezen a felületen hozhatók létre, ami egy megfelelő tananyaggal összekapcsolható. 
 Az érétékelés automatikus, a beküldést követően azonnal látható mind a diák, mind a tanár számára.
 
 Az oldal használatához egy felhasználói fiók szükséges, ami regisztráció segítségével hozható létre és az itt megadott adatokkal lehet később bejelentkezni.
 
 Négy féle felhasználói van: a (sima) felhasználó, a tanuló, a tanár és az adminisztrátor. 
-- A (sima) felhasználónak kezdtben semmilyen jogosultsága nincsen. Egy tanár vagy adminisztrátor adhat neki tanulói, tanár vagy admin jogot. 
+- A (sima) felhasználónak kezdetben semmilyen jogosultsága nincsen. Egy tanár vagy adminisztrátor adhat neki tanulói, tanár vagy admin jogot. 
 - A tanuló eléri az osztályába tartozó témakörök tananyagait és a hozzájuk tartozó teszteket.
 - A tanár létrehozhat osztályokat, módosíthatja a tanulók osztályát, létrehozhat témaköröket és tananyagokat, illetve teszteket.
-- Az adminisztárotrnak minden jogosultsága megvan + kezelheti a tanári fiókokat.
+- Az adminisztrátornak minden jogosultsága megvan + kezelheti a tanári fiókokat.
 
 ## 2. Projekt terv
 A projekt egy webalkalmazás, ami PHP alapokon nyugszik. E mellett HTML-t, CSS-t és JavaScript-et használunk. Az adatbázis pedig MySQL.
@@ -29,7 +29,7 @@ Az egyes feladatokat pedig Trello-ban követjük.
     - Adminisztrátor: Teljes hozzáférés az összes funkcióhoz. Tananyagok és tesztek teljes körű menedzselése. Felhasználói fiókok kezelése.
 - Támogatandó üzleti folyamatok:
   - Felhasználó azonosítás: 
-  - Felhasználó Regisztráció:
+  - Felhasználó regisztráció:
   - Jelszó visszaállítás:
   - Tananyag feltöltése:
   - Tesztek feltöltése:
