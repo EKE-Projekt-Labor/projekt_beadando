@@ -50,6 +50,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $password = trim($_POST["password"]);
     }
+	
+	if(empty(trim($_POST["confirm_password"]))){
+        $confirm_password_err = "Írd be újra a jelszavad.";     
+    } else{
+        $confirm_password = trim($_POST["confirm_password"]);
+        if(empty($password_err) && ($password != $confirm_password)){
+            $confirm_password_err = "A jelszók nem egyeznek.";
+        }
+    }
 
     /**
     * Hiba kezelés, adatbázisba feltöltés
