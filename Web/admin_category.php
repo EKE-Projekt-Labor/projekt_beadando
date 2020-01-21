@@ -66,6 +66,12 @@
 
 		$curriculumcats = db_query(db_sql('curriculum:catAll'));
 
+		echo '
+		<br>
+		<a href="?" class="btn btn-info">Összes</a>
+		<a href="?a=new" class="btn btn-info">Új</a>
+		<br><br>';
+
 	}
 
 	// HTML lábléc
