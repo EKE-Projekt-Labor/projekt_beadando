@@ -85,11 +85,17 @@
 			* @author	Eszényi Tamás
 			*/
 
+			case 'test:info':   
+				return "SELECT id, curriculumid, name, content, (SELECT name FROM curriculum WHERE id = t.curriculumid) as curriculumname FROM test as t WHERE id = ".$datas["id"]; break;
+
 			case 'test:new':    
 				return "INSERT INTO test (name, content, curriculumid) VALUES ('".$datas['name']."', '".json_encode($datas['content'], JSON_UNESCAPED_UNICODE | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES)."', ".$datas['curriculumid'].")"; break;
 
-			case 'test:info':   
-				return "SELECT id, curriculumid, name, content, (SELECT name FROM curriculum WHERE id = t.curriculumid) as curriculumname FROM test as t WHERE id = ".$datas["id"]; break;
+			case 'test:edit':   
+				return "UPDATE test SET name = '".$datas["name"]."', content = '".json_encode($datas['content'], JSON_UNESCAPED_UNICODE | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES)."', curriculumid = ".$datas['curriculumid']." WHERE id = ".$datas["id"]; break;
+			
+			case 'test:delete': 
+				return ""; break;
 
 
 			/**
