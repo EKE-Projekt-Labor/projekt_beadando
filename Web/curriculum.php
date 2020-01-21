@@ -63,8 +63,34 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
 	*/
 
 	else {
+		$classid = db_query(db_sql('user:classid'),false);
+		$curriculums = db_query(db_sql('curriculum:all',array('classid'=>$classid)));
 
-		#kód
+		echo '
+		<br>
+		<a href="?" class="btn btn-info"><img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24"> Tananyagok</a> ';
+		if (user_perm()>=5) {
+			echo '<a href="?a=new" class="btn btn-info">Új</a>'; 
+		}
+		echo '<br><br>';
+
+		echo '<table align="center"><tr>'.
+			'<th>ID</th><th>Megenvezés</th><th>Kategória</th>'.(user_perm()>=5?'<th>Osztály</th>':'').'<th>Tartalom (részlet)</th><th>Műveletek</th></tr>';
+		foreach ($curriculums as $num => $curriculum) {
+			echo '<tr>'.
+				'<td>'.$curriculum['id'].'</td>'.
+				'<td style="text-align:left;">'.$curriculum['name'].'</td>'.
+				'<td style="text-align:left;">'.$curriculum['category'].'</td>'.
+				(user_perm()>=5?'<td style="text-align:left;">'.$curriculum['class'].'</td>':'').
+				'<td style="text-align:left;">'.strip_tags($curriculum['content']).'...</td>'.
+				'<td><a href="?a=read&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/play-fill.svg" alt="" width="24" height="24"></a> '
+					.($curriculum['creatorid']==$_SESSION["id"] || user_perm() == 9?
+					'<a href="?a=edit&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
+					<a href="?a=del&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/trash.svg" alt="" width="24" height="24"></a>':'').
+				'</td>'.
+			'</tr>';
+		}
+		echo '</table>';
 
 	}
 
