@@ -39,11 +39,15 @@
 		?>
 
 		<center>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px"> 
             <div class="form-group">
                 <label>Megnevezés</label>
                 <input type="text" name="id" value="<?php echo $curriculumcatinfo['id']; ?>" hidden>
                 <input type="text" name="name" class="form-control" value="<?php echo $curriculumcatinfo['name']; ?>">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" name="action_<?php echo $_GET['a']; ?>" value="<?php echo ($_GET['a']=='edit'?'Mentés':'Létrehozás'); ?>">
+                <a class="btn btn-link" href="?">Mégse</a>
             </div>
         </form>
     	</center>
