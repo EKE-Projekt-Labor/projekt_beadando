@@ -75,6 +75,11 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
 		if (user_perm()==9) {
 			$users = db_query(db_sql('user:all', array('WHERE'=>" WHERE permission=5")));
 		}
+		
+		if (isset($_GET['id'])) {
+			$curriculuminfo = db_query(db_sql('curriculum:info', array('id'=>$_GET['id'])))[0];
+		}
+		?>
 
 	}
 
