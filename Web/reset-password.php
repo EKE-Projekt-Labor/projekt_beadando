@@ -69,6 +69,10 @@ echo html_header('Új jelszó');
 
         <p>Töltsd ki a a lejjebb látható mezőket a jelszó megváltoztatásához.</p>
         <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
-		
+			<div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <label>Az új jelszó</label>
+                <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
+                <span class="help-block"><?php echo $new_password_err; ?></span>
+            </div>
 		</form>
 		
