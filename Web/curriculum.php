@@ -80,6 +80,17 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
 			$curriculuminfo = db_query(db_sql('curriculum:info', array('id'=>$_GET['id'])))[0];
 		}
 		?>
+		
+		<center>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px"> 
+
+		
+		
+		
+        </form>
+    	</center>
+
+		<?php
 
 	}
 
