@@ -68,6 +68,10 @@
                             ?>
                         </select>
                     </div>
+                    <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                        <label>Kérdések és válaszok</label>
+                        
+                    </div>
                 </form>
             </center>
 
