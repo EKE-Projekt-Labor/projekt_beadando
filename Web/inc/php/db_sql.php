@@ -34,7 +34,10 @@
 
 			case 'user:classid': 
 				return "SELECT classid FROM user WHERE id = ".$_SESSION["id"]; break;
-				
+		
+			case 'user:info': 
+				return "SELECT id, username, permission, (SELECT name FROM user_class WHERE id = u.classid) as class, classid FROM user as u WHERE id = ".$datas["id"]; break;
+			
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
