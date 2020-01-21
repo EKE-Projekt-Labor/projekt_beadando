@@ -55,3 +55,17 @@ CREATE TABLE `curriculum_read` (
   `Last` int(11) NOT NULL,
   `Max` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `test`
+--
+
+CREATE TABLE `test` (
+  `ID` int(11) NOT NULL,
+  `CurriculumID` int(11) NOT NULL,
+  `Name` varchar(200) NOT NULL,
+  `Content` varchar(20000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
