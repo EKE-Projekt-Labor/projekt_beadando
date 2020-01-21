@@ -18,7 +18,11 @@
         ]]);
     }
     else if (isset($_POST['action_new']) && user_perm()>=5) {
-        
+        action('new', ['test:new', [
+            'name'=>$_POST['name'],
+            'content'=>$_POST['content'],
+            'curriculumid'=>$_POST['curriculumid']
+        ]]);
     }
 	
 
