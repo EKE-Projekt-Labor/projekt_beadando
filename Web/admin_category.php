@@ -9,6 +9,7 @@
 	* @author	Albach Zsolt
 	*/
 
+	// Akció: frissítés
 	if (isset($_POST['action_edit'])) {
 	    action('edit', ['curriculum:catEdit', [
 	        'id'=>$_POST['id'],
@@ -31,7 +32,10 @@
 
 	else if ($_GET['a']=='edit' || $_GET['a']=='new') {
 
-		#kód
+		// szerk|új
+		if (isset($_GET['id'])) {
+			$curriculumcatinfo = db_query(db_sql('curriculum:catInfo', array('id'=>$_GET['id'])))[0];
+		}
 
 	}
 
