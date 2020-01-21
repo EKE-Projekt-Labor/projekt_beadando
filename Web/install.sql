@@ -69,3 +69,17 @@ CREATE TABLE `test` (
   `Name` varchar(200) NOT NULL,
   `Content` varchar(20000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `test_solved`
+--
+
+CREATE TABLE `test_solved` (
+  `ID` int(11) NOT NULL,
+  `TestID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `Answers` varchar(20000) NOT NULL,
+  `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
