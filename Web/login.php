@@ -88,6 +88,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
+echo html_header('Bejelentkezés');
 ?>
 <p></p>
         <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
