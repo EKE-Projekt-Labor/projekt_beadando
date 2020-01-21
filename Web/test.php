@@ -244,7 +244,11 @@ echo '<table align="center"><tr>'.
         '<td style="text-align:left;">'.$test['name'].'</td>'.
         '<td style="text-align:left;">'.$test['curriculum'].'</td>'.
         //'<td style="text-align:left;">'.strip_tags($test['content']).'...</td>'.
-        '
+        '<td><a href="?a=fill&id='.$test['id'].'" class="btn btn-info">'.($test['filled']=='true'||user_perm()>=5?'Eredmény':'Kitöltés').'</a> '
+            .($test['creatorid']==$_SESSION["id"] || user_perm() == 9?
+            '<a href="?a=edit&id='.$test['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
+            <a href="?a=del&id='.$test['id'].'" class="btn btn-info"><img src="inc/img/icons/trash.svg" alt="" width="24" height="24"></a>':'').
+            '</td>'.
         '</tr>';
     }
     echo '</table>';
