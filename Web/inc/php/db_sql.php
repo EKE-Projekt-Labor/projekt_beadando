@@ -91,6 +91,9 @@
 			case 'curriculum:readInfo': 
 				return "SELECT id, curriculumid, userid, last, max FROM curriculum_read WHERE curriculumid = ".$datas['curriculumid']." and userid = ".$_SESSION["id"]; break;
 				
+			case 'curriculum:readNew': 
+				return "INSERT INTO curriculum_read (curriculumid, userid, last, max) VALUES (".$datas['curriculumid'].", ".$datas['userid'].", ".$datas['last'].", ".$datas['max'].")"; break;
+			
 			
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
