@@ -31,6 +31,15 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
     ]]);
 }
 
+// Lapozás
+$lapozas_url = '?a=read&id='.$curriculuminfo['id'].'&page='; $prev = $_GET['page']-1; $next = $_GET['page']+1;
+$lapozasVissza = $_GET['page'] > 1;
+$lapozasElore  = $_GET['page'] < $maxpage;
+echo '<a href="'.($lapozasVissza?$lapozas_url.$prev:'#').'" class="btn btn-'.($lapozasVissza?'success':'secondary').'">'.
+    '<img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24">  Előző</a> ';
+echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($lapozasElore?'success':'secondary').'">'.
+    'Következő <img src="inc/img/icons/chevron-compact-right.svg" alt="" width="24" height="24"> </a>';
+
 
 /**
 	* Tananyag olvasása oldal
