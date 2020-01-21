@@ -21,7 +21,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
 	if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Please confirm the password.";
-    } 
+    }  else{
+        $confirm_password = trim($_POST["confirm_password"]);
+        
+		
+    }
 
     /**
     * Hibakezelés, frissítés az adatbázisban
