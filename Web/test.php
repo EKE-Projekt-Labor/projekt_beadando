@@ -61,7 +61,11 @@
                     <div class="form-group">
                         <label>Tananyag</label>
                         <select class="form-control" name="curriculumid">
-                            
+                            <?php
+                            foreach ($curriculums as $curriculum) {
+                                echo '<option value="'.$curriculum['id'].'" '.($testinfo['curriculumid']==$curriculum['id']?' selected':'').'>'.$curriculum['name'].' ['.$curriculum['id'].']</option>'."\n";
+                            }
+                            ?>
                         </select>
                     </div>
                 </form>
