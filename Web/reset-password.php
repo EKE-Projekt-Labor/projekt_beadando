@@ -15,12 +15,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     /**
-    * Hibakezelés, frissítés az adatbézisban
+    * Hibakezelés, frissítés az adatbázisban
     *
     * @author   Kormány Milán
     */
+    if(empty($new_password_err) && empty($confirm_password_err)){
+        $sql = db_sql('user:passNew');
+        
+        if($stmt = mysqli_prepare($link, $sql)){
+            mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
+            
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_id = $_SESSION["id"];
+            
+            if(mysqli_stmt_execute($stmt)){
+                session_destroy();
+                header("location: login.php");
+                exit();
+            } else{
+                echo "Hiba történt, kérem próbálja meg később.";
+            }
+        }
+        
+        mysqli_stmt_close($stmt);
+    }
 
-    # kód
 
 }
 
