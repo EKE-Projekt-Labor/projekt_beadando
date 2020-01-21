@@ -18,7 +18,9 @@ if (isset($_POST['action_edit'])) {
 
 // Akció: létrehozás
 else if (isset($_POST['action_new'])) {
-  
+    action('new', ['user:classNew', [
+        'name'=>$_POST['name']
+    ]]);
 }
 
 
