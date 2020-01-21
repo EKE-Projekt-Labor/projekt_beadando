@@ -15,6 +15,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password_err = "Add meg az új jelszót.";     
     } elseif(strlen(trim($_POST["new_password"])) < 6){
         $new_password_err = "A jelszónak minimum 6 karakter hosszúnak kell lennie.";
+    } else{
+        $new_password = trim($_POST["new_password"]);
     }
 
 
