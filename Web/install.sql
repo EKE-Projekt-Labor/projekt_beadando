@@ -30,3 +30,14 @@ CREATE TABLE `curriculum` (
   `Content` varchar(20000) NOT NULL,
   `ClassID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `curriculum_category`
+--
+
+CREATE TABLE `curriculum_category` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
