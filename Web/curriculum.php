@@ -88,6 +88,10 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
                 <input type="text" name="id" value="<?php echo $curriculuminfo['id']; ?>" hidden>
                 <input type="text" name="name" class="form-control" value="<?php echo $curriculuminfo['name']; ?>">
             </div>
+			<div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <label>Tartalom</label>
+                <textarea class="form-control" name="content" rows="5" maxlength="20000"><?php echo $curriculuminfo['content']; ?></textarea>
+            </div>
 		
 		
 		
