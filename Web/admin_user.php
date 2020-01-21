@@ -70,6 +70,10 @@
                   ?>
                 </select>
             </div>
+			<?php /*}*/ ?>
+            <div class="form-group">
+                <label>Jogosultság</label>
+                <select class="form-control" name="permission"<?php echo ($_GET['id']==$_SESSION["id"]?' disabled':'') ?>>
 		
 		
 		
