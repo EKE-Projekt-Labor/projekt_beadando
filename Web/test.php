@@ -40,7 +40,11 @@
         
         // nem jogosult elolvasni --> átirányít a listára
 		if ($curriculuminfo['classid'] != $classid && user_perm()<5) {
-			header("location: ".basename(__FILE__)); exit();
+            header("location: ".basename(__FILE__)); exit();
+        // még nem töltheti ki --> kiírás, hogy még nem olvasta el a leckét
+		} else if ($curriculumread['max'] != substr_count($curriculuminfo['content'],'<hr>')+1 && user_perm()<5) {
+			echo "Még nem olvastad végig a teszthez tartozó tananyagot!";
+		// 
 
 	}
 
