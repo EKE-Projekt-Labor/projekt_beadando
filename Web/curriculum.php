@@ -30,7 +30,14 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
         'classid'=>$_POST['classid']
     ]]);
 }
+// Oldal: olvasás
+else if ($_GET['a']=='read' && isset($_GET['id'])) {
 
+    $curriculuminfo = db_query(db_sql('curriculum:info', array('id'=>$_GET['id'])))[0]; // tananyag
+    $classid = db_query(db_sql('user:classid'),false); // osztály
+    $curriculumread = db_query(db_sql('curriculum:readInfo', array('curriculumid'=>$_GET['id'])))[0]; // olvasta már?
+    $maxpage = substr_count($curriculuminfo['content'],'<hr>')+1; // maximum oldal
+    
 // nem jogosult elolvasni --> átirányít a listára
 if ($curriculuminfo['classid'] != $classid && $_SESSION["id"] != $curriculuminfo['creatorid']) {
     header("location: ".basename(__FILE__)); exit();
@@ -40,7 +47,7 @@ if ($curriculuminfo['classid'] != $classid && $_SESSION["id"] != $curriculuminfo
 } else {
     $page = explode('<hr>', $curriculuminfo['content'])[$_GET['page']-1];
     $pagenum = $_GET['page'];
-    
+
 // haladás mentése
 if (isset($curriculumread['id'])) {
     db_query(db_sql('curriculum:readEdit', array('id'=>$curriculumread['id'],'last'=>$pagenum,'max'=> ($pagenum>$curriculumread['max']?$pagenum:$curriculumread['max']) ))); // mod
