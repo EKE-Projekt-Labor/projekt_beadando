@@ -62,6 +62,9 @@
 			case 'user:classDelete': 
 				return ""; break;
 
+			case 'user:classAll': 
+				return "SELECT id, name FROM user_class"; break;
+
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
