@@ -36,4 +36,7 @@
 
 	}
 
+	// HTML lábléc
+    echo html_footer();
+
 ?>
