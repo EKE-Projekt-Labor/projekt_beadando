@@ -52,6 +52,11 @@
                 <input type="text" name="id" value="<?php echo $userinfo['id']; ?>" hidden>
                 <input type="text" name="username" class="form-control" value="<?php echo $userinfo['username']; ?>">
             </div>
+			<div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <label>Jelszó<?php echo ($_GET['a']=='edit'?' módosítás':''); ?></label>
+                <?php echo ($_GET['a']=='edit'?'<p>Csak akkor töltsd ki, ha módosítai szeretnéd!</p>':''); ?>
+                <input type="password" name="password" class="form-control" value="">
+            </div>
 		
 		
 		
