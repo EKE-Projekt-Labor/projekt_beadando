@@ -30,6 +30,17 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
         'classid'=>$_POST['classid']
     ]]);
 }
+
+// nem jogosult elolvasni --> átirányít a listára
+if ($curriculuminfo['classid'] != $classid && $_SESSION["id"] != $curriculuminfo['creatorid']) {
+    header("location: ".basename(__FILE__)); exit();
+    // még nem töltheti ki --> kiírás, hogy még nem olvasta el a leckét
+} else if ($curriculumread['last'] > 0 && !isset($_GET['page'])) {
+    header("location: ".basename(__FILE__).'?a=read&id='.$curriculuminfo['id'].'&page='.$curriculumread['last']); exit();
+} else {
+    $page = explode('<hr>', $curriculuminfo['content'])[$_GET['page']-1];
+    $pagenum = $_GET['page'];
+    
 // haladás mentése
 if (isset($curriculumread['id'])) {
     db_query(db_sql('curriculum:readEdit', array('id'=>$curriculumread['id'],'last'=>$pagenum,'max'=> ($pagenum>$curriculumread['max']?$pagenum:$curriculumread['max']) ))); // mod
