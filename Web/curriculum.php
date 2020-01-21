@@ -8,11 +8,21 @@
 	*
 	* @author	Albach Zsolt
 	*/
-	
-	#kód
+
+// Akció: frissítés
+if (isset($_POST['action_edit']) && user_perm()>=5) {
+    action('edit', ['curriculum:edit', [
+        'id'=>$_POST['id'],
+        'name'=>$_POST['name'],
+        'content'=>$_POST['content'],
+        'categoryid'=>$_POST['categoryid'],
+        'creatorid'=>$_POST['creatorid'],
+        'classid'=>$_POST['classid']
+    ]]);
+}
 
 
-	/**
+/**
 	* Tananyag olvasása oldal
 	*
 	* @author	Albach Zsolt
