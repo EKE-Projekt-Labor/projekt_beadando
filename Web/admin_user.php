@@ -5,7 +5,6 @@
 
 	/**
 	* Akciók
-	*
 	* @author	Albach Zsolt
 	*/
 
@@ -19,6 +18,7 @@
 		]]);
 	} 
 	// Akció: létrehozás
+	
 	else if (isset($_POST['action_new'])) {
 		action('new', ['user:new', [
 			'username'=>$_POST['username'],
