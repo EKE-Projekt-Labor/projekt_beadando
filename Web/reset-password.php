@@ -63,6 +63,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 * @author   Veres Tamás
 */
 
-# kód
+echo html_header('Új jelszó');
 
 ?>
+
+        <p>Töltsd ki a a lejjebb látható mezőket a jelszó megváltoztatásához.</p>
+        <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+		
+		</form>
+		
