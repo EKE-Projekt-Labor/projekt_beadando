@@ -92,6 +92,16 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
                 <label>Tartalom</label>
                 <textarea class="form-control" name="content" rows="5" maxlength="20000"><?php echo $curriculuminfo['content']; ?></textarea>
             </div>
+			<div class="form-group">
+                <label>Kategória</label>
+                <select class="form-control" name="categoryid">
+                  <?php
+                  	foreach ($curriculumcats as $curriculumcat) {
+                  		echo '<option value="'.$curriculumcat['id'].'" '.($curriculuminfo['categoryid']==$curriculumcat['id']?' selected':'').'>'.$curriculumcat['name'].'</option>'."\n";
+                  	}
+                  ?>
+                </select>
+            </div>
 		
 		
 		
