@@ -47,11 +47,12 @@
 
             // szerk|új
             if (isset($_GET['id'])) {
-
+                $testinfo = db_query(db_sql('test:info', array('id'=>$_GET['id'])))[0];
+                $qaas = json_decode_($testinfo['content'], JSON_OBJECT_AS_ARRAY);
             }
             ?>
 
-            
+
 
 
 
