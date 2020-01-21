@@ -113,6 +113,16 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
                   ?>
                 </select>
             </div>
+			 <?php if (user_perm()==9) { ?>
+            <div class="form-group">
+                <label>Tananyag tulajdonosa</label>
+                <select class="form-control" name="creatorid">
+                  <?php
+                  	foreach ($users as $user) {
+                  		echo '<option value="'.$user['id'].'"'.($curriculuminfo['creatorid']==$user['id']?' selected':'').'>'.$user['username'].'</option>'."\n";
+                  	}
+                  ?>
+				</select>
 		
 		
 		
