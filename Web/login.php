@@ -118,3 +118,6 @@ echo html_header('Bejelentkezés');
         - admin     (jelszó: 123456)
         - admin2    (jelszó: 123456)
         </pre>
+<?php
+    echo html_footer();
+?>
