@@ -225,9 +225,16 @@
 
 	else {
 
-		#kód
+$classid = db_query(db_sql('user:classid'),false);
+$tests = db_query(db_sql('test:all', array('classid'=>$classid)));
 
-	}
+echo '
+<br>
+<a href="?" class="btn btn-info"><img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24"> Tesztek</a> ';
+if (user_perm()>=5) {
+echo '<a href="?a=new" class="btn btn-info">Új</a>';
+}
+
 
 
 	// HTML lábléc
