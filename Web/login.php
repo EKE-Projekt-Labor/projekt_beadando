@@ -57,6 +57,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
+							 // Password is correct, so start a new session
+                            session_start();
+                            
+                            // Store data in session variables
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;                            
+                            
+                            // Redirect user to welcome page
+                            header("location: index.php");
+                        } else{
+                            // Display an error message if password is not valid
+                            $password_err = "Hibás jelszó!";
+                        }
+                    }
+                } else{
+                    // Display an error message if username doesn't exist
+                    $username_err = "Nincs ilyen felhasználói fiók.";
+                }
+            } else{
+                echo "Hiba! Próbáld meg később.";
+            }
+        }
+        
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+    
+    // Close connection
+    mysqli_close($link);
+}
+echo html_header('Bejelentkezés');
 ?>
 <p></p>
         <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -86,3 +118,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         - admin     (jelszó: 123456)
         - admin2    (jelszó: 123456)
         </pre>
+<?php
+    echo html_footer();
+?>
