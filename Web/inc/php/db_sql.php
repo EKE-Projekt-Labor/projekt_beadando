@@ -138,10 +138,7 @@
 				
 			case 'curriculum:catNew': 
 				return "INSERT INTO curriculum_category (name) VALUES ('".$datas['name']."')"; break;
-				
-			case 'curriculum:readInfo': 
-				return "SELECT id, curriculumid, userid, last, max FROM curriculum_read WHERE curriculumid = ".$datas['curriculumid']." and userid = ".$_SESSION["id"]; break;
-				
+
 			case 'curriculum:catEdit': 
 				return "UPDATE curriculum_category SET name = '".$datas["name"]."' WHERE id = ".$datas["id"]; break;
 				
@@ -150,6 +147,9 @@
 			
 			case 'curriculum:catAll': 
 				return "SELECT id, name FROM curriculum_category"; break;
+									
+			case 'curriculum:readInfo': 
+				return "SELECT id, curriculumid, userid, last, max FROM curriculum_read WHERE curriculumid = ".$datas['curriculumid']." and userid = ".$_SESSION["id"]; break;
 				
 			case 'curriculum:readNew': 
 				return "INSERT INTO curriculum_read (curriculumid, userid, last, max) VALUES (".$datas['curriculumid'].", ".$datas['userid'].", ".$datas['last'].", ".$datas['max'].")"; break;
