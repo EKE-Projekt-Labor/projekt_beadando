@@ -30,23 +30,48 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
         'classid'=>$_POST['classid']
     ]]);
 }
+// Oldal: olvasás
+else if ($_GET['a']=='read' && isset($_GET['id'])) {
+
+    $curriculuminfo = db_query(db_sql('curriculum:info', array('id' => $_GET['id'])))[0]; // tananyag
+    $classid = db_query(db_sql('user:classid'), false); // osztály
+    $curriculumread = db_query(db_sql('curriculum:readInfo', array('curriculumid' => $_GET['id'])))[0]; // olvasta már?
+    $maxpage = substr_count($curriculuminfo['content'], '<hr>') + 1; // maximum oldal
+
+// nem jogosult elolvasni --> átirányít a listára
+    if ($curriculuminfo['classid'] != $classid && $_SESSION["id"] != $curriculuminfo['creatorid']) {
+        header("location: " . basename(__FILE__));
+        exit();
+        // még nem töltheti ki --> kiírás, hogy még nem olvasta el a leckét
+    } else if ($curriculumread['last'] > 0 && !isset($_GET['page'])) {
+        header("location: " . basename(__FILE__) . '?a=read&id=' . $curriculuminfo['id'] . '&page=' . $curriculumread['last']);
+        exit();
+    } else {
+        $page = explode('<hr>', $curriculuminfo['content'])[$_GET['page'] - 1];
+        $pagenum = $_GET['page'];
+
 // haladás mentése
-if (isset($curriculumread['id'])) {
-    db_query(db_sql('curriculum:readEdit', array('id'=>$curriculumread['id'],'last'=>$pagenum,'max'=> ($pagenum>$curriculumread['max']?$pagenum:$curriculumread['max']) ))); // mod
-} else {
-    db_query(db_sql('curriculum:readNew', array('curriculumid'=>$curriculuminfo['id'],'userid'=>$_SESSION["id"],'last'=>$pagenum,'max'=>$pagenum))); // új
-}
+        if (isset($curriculumread['id'])) {
+            db_query(db_sql('curriculum:readEdit', array('id' => $curriculumread['id'], 'last' => $pagenum, 'max' => ($pagenum > $curriculumread['max'] ? $pagenum : $curriculumread['max'])))); // mod
+        } else {
+            db_query(db_sql('curriculum:readNew', array('curriculumid' => $curriculuminfo['id'], 'userid' => $_SESSION["id"], 'last' => $pagenum, 'max' => $pagenum))); // új
+        }
 
 // megjelenítés
-echo '<center><div style="width:500px; margin:20px 0 40px 0;text-align:left;">'.$page.'</div></center>';
+        echo '<center><div style="width:500px; margin:20px 0 40px 0;text-align:left;">' . $page . '</div></center>';
 // Lapozás
-$lapozas_url = '?a=read&id='.$curriculuminfo['id'].'&page='; $prev = $_GET['page']-1; $next = $_GET['page']+1;
-$lapozasVissza = $_GET['page'] > 1;
-$lapozasElore  = $_GET['page'] < $maxpage;
-echo '<a href="'.($lapozasVissza?$lapozas_url.$prev:'#').'" class="btn btn-'.($lapozasVissza?'success':'secondary').'">'.
-    '<img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24">  Előző</a> ';
-echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($lapozasElore?'success':'secondary').'">'.
-    'Következő <img src="inc/img/icons/chevron-compact-right.svg" alt="" width="24" height="24"> </a>';
+        $lapozas_url = '?a=read&id=' . $curriculuminfo['id'] . '&page=';
+        $prev = $_GET['page'] - 1;
+        $next = $_GET['page'] + 1;
+        $lapozasVissza = $_GET['page'] > 1;
+        $lapozasElore = $_GET['page'] < $maxpage;
+        echo '<a href="' . ($lapozasVissza ? $lapozas_url . $prev : '#') . '" class="btn btn-' . ($lapozasVissza ? 'success' : 'secondary') . '">' .
+            '<img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24">  Előző</a> ';
+        echo '<a href="' . ($lapozasElore ? $lapozas_url . $next : '#') . '" class="btn btn-' . ($lapozasElore ? 'success' : 'secondary') . '">' .
+            'Következő <img src="inc/img/icons/chevron-compact-right.svg" alt="" width="24" height="24"> </a>';
+    }
+}
+
 
 
 /**
@@ -57,7 +82,17 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
 
 	else if ($_GET['a']=='read' && isset($_GET['id'])) {
 
-		#kód
+        $curriculumcats = db_query(db_sql('curriculum:catAll'));
+        $userclasss = db_query(db_sql('user:classAll'));
+
+        if (user_perm()==9) {
+            $users = db_query(db_sql('user:all', array('WHERE'=>" WHERE permission=5")));
+        }
+
+        // szerk|új
+        if (isset($_GET['id'])) {
+            $curriculuminfo = db_query(db_sql('curriculum:info', array('id'=>$_GET['id'])))[0];
+        }
 
 	}
 
@@ -143,8 +178,34 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
 	*/
 
 	else {
+		$classid = db_query(db_sql('user:classid'),false);
+		$curriculums = db_query(db_sql('curriculum:all',array('classid'=>$classid)));
 
-		#kód
+		echo '
+		<br>
+		<a href="?" class="btn btn-info"><img src="inc/img/icons/chevron-compact-left.svg" alt="" width="24" height="24"> Tananyagok</a> ';
+		if (user_perm()>=5) {
+			echo '<a href="?a=new" class="btn btn-info">Új</a>'; 
+		}
+		echo '<br><br>';
+
+		echo '<table align="center"><tr>'.
+			'<th>ID</th><th>Megenvezés</th><th>Kategória</th>'.(user_perm()>=5?'<th>Osztály</th>':'').'<th>Tartalom (részlet)</th><th>Műveletek</th></tr>';
+		foreach ($curriculums as $num => $curriculum) {
+			echo '<tr>'.
+				'<td>'.$curriculum['id'].'</td>'.
+				'<td style="text-align:left;">'.$curriculum['name'].'</td>'.
+				'<td style="text-align:left;">'.$curriculum['category'].'</td>'.
+				(user_perm()>=5?'<td style="text-align:left;">'.$curriculum['class'].'</td>':'').
+				'<td style="text-align:left;">'.strip_tags($curriculum['content']).'...</td>'.
+				'<td><a href="?a=read&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/play-fill.svg" alt="" width="24" height="24"></a> '
+					.($curriculum['creatorid']==$_SESSION["id"] || user_perm() == 9?
+					'<a href="?a=edit&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
+					<a href="?a=del&id='.$curriculum['id'].'" class="btn btn-info"><img src="inc/img/icons/trash.svg" alt="" width="24" height="24"></a>':'').
+				'</td>'.
+			'</tr>';
+		}
+		echo '</table>';
 
 	}
 
