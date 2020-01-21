@@ -58,6 +58,12 @@
                         <input type="text" name="id" value="<?php echo $testinfo['id']; ?>" hidden>
                         <input type="text" name="name" class="form-control" value="<?php echo $testinfo['name']; ?>">
                     </div>
+                    <div class="form-group">
+                        <label>Tananyag</label>
+                        <select class="form-control" name="curriculumid">
+                            
+                        </select>
+                    </div>
                 </form>
             </center>
 
