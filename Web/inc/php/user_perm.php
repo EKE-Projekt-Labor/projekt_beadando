@@ -18,5 +18,21 @@
 	* @return	int		Ha a $perm értéke null, akkor a felhasználó 
 	* 					jogosultsági szintjét adja vissza.
     */
-    
+    function user_perm ($perm = null) {
+
+		global $link;
+
+			$userPerm = db_query(db_sql('user:permission'), false); // fh. jog.szintje
+
+			if ($perm === null) {
+				return (int)$userPerm; // jogosultsági szint
+			} else {
+				if ($userPerm >= $perm) {
+					return true; // hozzáférés engedélyezve
+				} else {
+					header("location: index.php"); exit; // hozzáférés megtagadva
+				}
+			}
+
+	}
 ?>
