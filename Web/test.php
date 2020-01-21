@@ -24,6 +24,11 @@
             'curriculumid'=>$_POST['curriculumid']
         ]]);
     }
+
+    // Akció: kitötés
+    else if (isset($_POST['action_fill']) && user_perm()==1) {
+        
+    }
 	
 
     /**
