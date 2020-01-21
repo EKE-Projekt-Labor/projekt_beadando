@@ -85,11 +85,8 @@
 			* @author	Eszényi Tamás
 			*/
 
-			# Kód ilyesmi formában:
-			#
-			# case 'test:megnev': 
-			#	return "sql-utasítás"; break;
-			#
+			case 'test:new':    return "INSERT INTO test (name, content, curriculumid) VALUES ('".$datas['name']."', '".json_encode($datas['content'], JSON_UNESCAPED_UNICODE | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES)."', ".$datas['curriculumid'].")"; 
+			break;
 
 
 			/**
