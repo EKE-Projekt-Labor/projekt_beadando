@@ -18,6 +18,15 @@
 			'classid'=>$_POST['classid']
 		]]);
 	} 
+	// Akció: létrehozás
+	else if (isset($_POST['action_new'])) {
+		action('new', ['user:new', [
+			'username'=>$_POST['username'],
+			'password'=>$_POST['password'],
+			'permission'=>$_POST['permission'],
+			'classid'=>$_POST['classid']
+		]]);
+	}
 
 	/**
 	* Szerkesztés oldal
