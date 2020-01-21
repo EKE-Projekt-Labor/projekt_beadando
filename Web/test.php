@@ -234,7 +234,13 @@ echo '
 if (user_perm()>=5) {
 echo '<a href="?a=new" class="btn btn-info">Új</a>';
 }
+echo '<br><br>';
 
+echo '<table align="center"><tr>'.
+        '<th>ID</th><th>Megnevezés</th><th>Tananyag</th><th>Műveletek</th></tr>';
+    
+    echo '</table>';
+	}
 
 
 	// HTML lábléc
