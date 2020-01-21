@@ -73,7 +73,8 @@
 			# case 'curriculum:megnev': 
 			#	return "sql-utasítás"; break;
 			#
-
+			case 'curriculum:info': 
+				return "SELECT id, name, content, (SELECT name FROM curriculum_category WHERE id = c.categoryid) as category, categoryid, creatorid, classid FROM curriculum as c WHERE id = ".$datas["id"]; break;
 
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
