@@ -136,6 +136,9 @@
 			case 'curriculum:catInfo': 
 				return "SELECT id, name FROM curriculum_category WHERE id = ".$datas["id"]; break;
 				
+			case 'curriculum:catNew': 
+				return "INSERT INTO curriculum_category (name) VALUES ('".$datas['name']."')"; break;
+				
 			case 'curriculum:readInfo': 
 				return "SELECT id, curriculumid, userid, last, max FROM curriculum_read WHERE curriculumid = ".$datas['curriculumid']." and userid = ".$_SESSION["id"]; break;
 				
