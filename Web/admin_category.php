@@ -15,6 +15,10 @@ if (isset($_POST['action_edit'])) {
         'name'=>$_POST['name']
     ]]);
 }
+// Akció: létrehozás
+else if (isset($_POST['action_new'])) {
+  
+}
 
 
 /**
