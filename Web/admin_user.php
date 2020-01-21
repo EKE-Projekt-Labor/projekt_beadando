@@ -34,7 +34,6 @@
 	* @author	Veres Tamás
 	*/
 
-	// Oldal: új/szerkesztés
 	else if ($_GET['a']=='edit' || $_GET['a']=='new') {
 
 		if (isset($_GET['id'])) {
@@ -83,12 +82,11 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" name="action_<?php echo $_GET['a']; ?>" value="<?php echo ($_GET['a']=='edit'?'Mentés':'Létrehozás'); ?>">
                 <a class="btn btn-link" href="?">Mégse</a>
-            </div>
-		
-		
+            </div>	
 		</form>
 	    </center>
-
+		
+		<?php
 	}
 
 	/**
