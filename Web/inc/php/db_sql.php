@@ -33,13 +33,16 @@
 				return "SELECT permission FROM user WHERE id = ".$_SESSION["id"]; break;
 
 			case 'user:nameCheck': 
-				return "SELECT id FROM user WHERE username = ?"; break; // mysqli_stmt_bind_param
+				return "SELECT id FROM user WHERE username = ?"; break; 
 			
 			case 'user:newReg': 
-				return "INSERT INTO user (username, password) VALUES (?, ?)"; break; // mysqli_stmt_bind_param
+				return "INSERT INTO user (username, password) VALUES (?, ?)"; break; 
 	
 			case 'user:login': 
-				return "SELECT id, username, password FROM user WHERE username = ?"; break; // mysqli_stmt_bind_param
+				return "SELECT id, username, password FROM user WHERE username = ?"; break; 
+	
+			case 'user:passNew': 
+				return "UPDATE user SET password = ? WHERE id = ?"; break; 
 	
 			/**
 			* Teszt
