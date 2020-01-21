@@ -111,3 +111,52 @@ CREATE TABLE `user_class` (
   `ID` int(11) NOT NULL,
   `Name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- -------------------------------------------------------
+
+--
+-- Indexek a kiírt táblákhoz
+--
+
+--
+-- A tábla indexei `curriculum`
+--
+ALTER TABLE `curriculum`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- A tábla indexei `curriculum_category`
+--
+ALTER TABLE `curriculum_category`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- A tábla indexei `curriculum_read`
+--
+ALTER TABLE `curriculum_read`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- A tábla indexei `test`
+--
+ALTER TABLE `test`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- A tábla indexei `test_solved`
+--
+ALTER TABLE `test_solved`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- A tábla indexei `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- A tábla indexei `user_class`
+--
+ALTER TABLE `user_class`
+  ADD PRIMARY KEY (`ID`);
