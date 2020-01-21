@@ -91,6 +91,10 @@
 
                         ?>
                     </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" name="action_<?php echo $_GET['a']; ?>" value="<?php echo ($_GET['a']=='edit'?'Mentés':'Létrehozás'); ?>">
+                        <a class="btn btn-link" href="?">Mégse</a>
+                    </div>
                 </form>
             </center>
 
