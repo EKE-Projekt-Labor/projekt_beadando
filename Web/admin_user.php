@@ -57,6 +57,19 @@
                 <?php echo ($_GET['a']=='edit'?'<p>Csak akkor töltsd ki, ha módosítai szeretnéd!</p>':''); ?>
                 <input type="password" name="password" class="form-control" value="">
             </div>
+			<?php /*if ((int)$userinfo['permission']==1 || $_GET['a']=='new') {*/ ?>
+            <div class="form-group">
+                <label>Osztály</label>
+                <p style="text-align:left;">Csak diák jogosultság esetén lesz elmentve! Minden más jogosultság esetén az itt beállított érték figyelmen kívűl lesz hagyva.</p>
+                <select class="form-control" name="classid">
+                  <option value="0">-</option>
+                  <?php
+                  	foreach ($userclasss as $userclass) {
+                  		echo '<option value="'.$userclass['id'].'"'.($userclass['id']==$userinfo['classid']?' selected':'').'>'.$userclass['name'].'</option>'."\n";
+                  	}
+                  ?>
+                </select>
+            </div>
 		
 		
 		
