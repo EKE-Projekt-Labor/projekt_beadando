@@ -44,6 +44,9 @@
 			case 'user:edit': 
 				return "UPDATE user SET username = '".$datas["username"]."'".($datas["id"]==$_SESSION["id"]?'':", permission = ".$datas["permission"]).(trim($datas["password"])==''?'':", password = '".password_hash($datas['password'], PASSWORD_DEFAULT)."'").", classid = ".((int)$datas["permission"]==1?$datas["classid"]:'0')." WHERE id = ".$datas["id"]; break;
 	
+			case 'user:delete': 
+				return ""; break;
+				
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
