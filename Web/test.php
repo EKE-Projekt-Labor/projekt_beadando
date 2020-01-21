@@ -54,7 +54,9 @@
             <center>
                 <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px">
                     <div class="form-group">
-                        
+                        <label>Megnevezés</label>
+                        <input type="text" name="id" value="<?php echo $testinfo['id']; ?>" hidden>
+                        <input type="text" name="name" class="form-control" value="<?php echo $testinfo['name']; ?>">
                     </div>
                 </form>
             </center>
