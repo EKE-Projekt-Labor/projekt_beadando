@@ -17,7 +17,9 @@ if (isset($_POST['action_edit'])) {
 }
 // Akció: létrehozás
 else if (isset($_POST['action_new'])) {
-  
+    action('new', ['curriculum:catNew', [
+        'name'=>$_POST['name']
+    ]]);
 }
 
 
