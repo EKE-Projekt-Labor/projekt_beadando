@@ -34,6 +34,10 @@
 
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; // mysqli_stmt_bind_param
+			
+			case 'user:newReg': 
+				return "INSERT INTO user (username, password) VALUES (?, ?)"; break; // mysqli_stmt_bind_param
+	
 
 			/**
 			* Teszt
