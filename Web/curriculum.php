@@ -69,7 +69,12 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
 
 	else if (($_GET['a']=='edit' || $_GET['a']=='new') && user_perm()>=5) {
 
-		#kód
+		$curriculumcats = db_query(db_sql('curriculum:catAll'));
+		$userclasss = db_query(db_sql('user:classAll'));
+
+		if (user_perm()==9) {
+			$users = db_query(db_sql('user:all', array('WHERE'=>" WHERE permission=5")));
+		}
 
 	}
 
