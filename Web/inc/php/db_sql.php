@@ -29,7 +29,8 @@
 			# case 'user:megnev': 
 			#	return "sql-utasítás"; break;
 			#
-
+			case 'user:permission': 
+				return "SELECT permission FROM user WHERE id = ".$_SESSION["id"]; break;
 
 			/**
 			* Teszt
