@@ -78,6 +78,9 @@
 				
 			case 'curriculum:new': 
 				return "INSERT INTO curriculum (name, content, categoryid, creatorid) VALUES ('".$datas['name']."', '".$datas['content']."', ".$datas['categoryid'].", ".$datas['creatorid'].", ".$datas['classid'].")"; break;
+				
+			case 'curriculum:edit': 
+				return "UPDATE curriculum SET name = '".$datas["name"]."', content = '".$datas["content"]."', categoryid = ".$datas["categoryid"].(user_perm()==9?", creatorid=".$datas["creatorid"]:'').", classid = ".$datas["classid"]." WHERE id = ".$datas["id"]; break;
 
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
