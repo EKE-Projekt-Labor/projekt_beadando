@@ -74,6 +74,10 @@
             <div class="form-group">
                 <label>Jogosultság</label>
                 <select class="form-control" name="permission"<?php echo ($_GET['id']==$_SESSION["id"]?' disabled':'') ?>>
+				  <option value="0" <?php echo ($userinfo['permission']=='0'?' selected':''); ?>>0 - felhasználó</option>
+                  <option value="1" <?php echo ($userinfo['permission']=='1'?' selected':''); ?>>1 - diák</option>
+				  
+				</select>
 		
 		
 		
