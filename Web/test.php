@@ -238,7 +238,15 @@ echo '<br><br>';
 
 echo '<table align="center"><tr>'.
         '<th>ID</th><th>Megnevezés</th><th>Tananyag</th><th>Műveletek</th></tr>';
-    
+    foreach ($tests as $num => $test) {
+    echo '<tr>'.
+        '<td>'.$test['id'].'</td>'.
+        '<td style="text-align:left;">'.$test['name'].'</td>'.
+        '<td style="text-align:left;">'.$test['curriculum'].'</td>'.
+        //'<td style="text-align:left;">'.strip_tags($test['content']).'...</td>'.
+        '
+        '</tr>';
+    }
     echo '</table>';
 	}
 
