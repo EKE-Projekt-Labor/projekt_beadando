@@ -53,7 +53,9 @@
             ?>
             <center>
                 <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px">
-                
+                    <div class="form-group">
+                        
+                    </div>
                 </form>
             </center>
 
