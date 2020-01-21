@@ -103,6 +103,9 @@
 			case 'test:fillNew':
 				return "INSERT INTO test_solved (testid, userid, answers) VALUES (".$datas['testid'].", ".$_SESSION["id"].", '".json_encode($datas['answers'], JSON_UNESCAPED_UNICODE | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES)."')"; break;
 
+			case 'test:filledInfo':
+				return "SELECT id, username, (SELECT answers FROM test_solved WHERE userid = u.id and testid = ".$datas['testid'].") as answers FROM user as u WHERE (SELECT userid FROM test_solved WHERE userid = u.id and testid = ".$datas['testid'].") = id"; break;
+
 
 			/**
 			* Tananyag
