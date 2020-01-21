@@ -62,9 +62,6 @@
 			case 'user:classDelete': 
 				return ""; break;
 
-			case 'user:passNew': 
-				return "UPDATE user SET password = ? WHERE id = ?"; break;
-
 			case 'user:classAll': 
 				return "SELECT id, name FROM user_class"; break;
 
