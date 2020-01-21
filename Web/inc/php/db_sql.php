@@ -94,7 +94,9 @@
 			case 'curriculum:readNew': 
 				return "INSERT INTO curriculum_read (curriculumid, userid, last, max) VALUES (".$datas['curriculumid'].", ".$datas['userid'].", ".$datas['last'].", ".$datas['max'].")"; break;
 			
-			
+			case 'curriculum:readEdit': 
+				return "UPDATE curriculum_read SET last = ".$datas["last"].", max = ".$datas["max"]." WHERE id = ".$datas["id"]; break;
+
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
 			*/
