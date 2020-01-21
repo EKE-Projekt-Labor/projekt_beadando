@@ -10,7 +10,10 @@
 	*/
 
 if (isset($_POST['action_edit'])) {
-   
+    action('edit', ['curriculum:catEdit', [
+        'id'=>$_POST['id'],
+        'name'=>$_POST['name']
+    ]]);
 }
 
 
