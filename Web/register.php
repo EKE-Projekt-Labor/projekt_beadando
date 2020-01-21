@@ -103,7 +103,12 @@ echo html_header('Regisztráció');
                 <label>Felhasználónév</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
+            </div>
+			<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Jelszó</label>
+                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
 
 <?php
     echo html_footer();
