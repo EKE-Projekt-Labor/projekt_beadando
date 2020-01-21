@@ -36,6 +36,19 @@
 		if (isset($_GET['id'])) {
 			$curriculumcatinfo = db_query(db_sql('curriculum:catInfo', array('id'=>$_GET['id'])))[0];
 		}
+		?>
+
+		<center>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+            <div class="form-group">
+                <label>Megnevezés</label>
+                <input type="text" name="id" value="<?php echo $curriculumcatinfo['id']; ?>" hidden>
+                <input type="text" name="name" class="form-control" value="<?php echo $curriculumcatinfo['name']; ?>">
+            </div>
+        </form>
+    	</center>
+
+		<?php
 
 	}
 
