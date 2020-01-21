@@ -58,6 +58,9 @@
 
 			case 'user:classEdit': 
 				return "UPDATE user_class SET name = '".$datas["name"]."' WHERE id = ".$datas["id"]; break;
+			
+			case 'user:classDelete': 
+				return ""; break;
 
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
