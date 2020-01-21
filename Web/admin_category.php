@@ -73,12 +73,13 @@
 		<br><br>';
 
 		echo '<table align="center"><tr>'.
-			'<th>Megnevezés</th><th>Műveletek</th></tr>';
+			'<th>ID</th><th>Megnevezés</th><th>Műveletek</th></tr>';
 		foreach ($curriculumcats as $num => $curriculumcat) {
 			echo '<tr>'.
-				'<td style="text-align:left;"'.$curriculumcat['name'].'</td>'.
+				'<td>'.$curriculumcat['id'].'</td>'.
+				'<td style="text-align:left;">'.$curriculumcat['name'].'</td>'.
 				'<td>'.(user_perm() >= 5?
-					'<a href="?a=editcid='.$curriculumcat['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
+					'<a href="?a=edit&id='.$curriculumcat['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
 					<a href="?a=del&id='.$curriculumcat['id'].'" class="btn btn-info"><img src="inc/img/icons/trash.svg" alt="" width="24" height="24"></a>':'').
 				'</td>'.
 			'</tr>';
