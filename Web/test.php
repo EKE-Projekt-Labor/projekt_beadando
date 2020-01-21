@@ -42,7 +42,18 @@
 
 	else if(($_GET['a']=='edit' || $_GET['a']=='new') && user_perm()>=5) {
 
-		#kód
+
+            $curriculums = db_query(db_sql('curriculum:all'));
+
+            // szerk|új
+            if (isset($_GET['id'])) {
+
+            }
+            ?>
+
+            
+
+
 
 	}
 
