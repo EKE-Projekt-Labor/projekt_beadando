@@ -30,7 +30,15 @@ else if (isset($_POST['action_new']) && user_perm()>=5) {
         'classid'=>$_POST['classid']
     ]]);
 }
+// haladás mentése
+if (isset($curriculumread['id'])) {
+    db_query(db_sql('curriculum:readEdit', array('id'=>$curriculumread['id'],'last'=>$pagenum,'max'=> ($pagenum>$curriculumread['max']?$pagenum:$curriculumread['max']) ))); // mod
+} else {
+    db_query(db_sql('curriculum:readNew', array('curriculumid'=>$curriculuminfo['id'],'userid'=>$_SESSION["id"],'last'=>$pagenum,'max'=>$pagenum))); // új
+}
 
+// megjelenítés
+echo '<center><div style="width:500px; margin:20px 0 40px 0;text-align:left;">'.$page.'</div></center>';
 // Lapozás
 $lapozas_url = '?a=read&id='.$curriculuminfo['id'].'&page='; $prev = $_GET['page']-1; $next = $_GET['page']+1;
 $lapozasVissza = $_GET['page'] > 1;
