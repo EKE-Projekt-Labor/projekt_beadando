@@ -47,7 +47,7 @@
 
 	else {
 
-		#kód
+		$curriculumcats = db_query(db_sql('curriculum:catAll'));
 
 	}
 
