@@ -133,6 +133,9 @@
 			case 'curriculum:all': 
 				return "SELECT id, (SELECT name FROM curriculum_category WHERE id = c.categoryid) as category, categoryid, name, SUBSTRING(content,1, 32) as content, (SELECT name FROM user_class WHERE id = c.classid) as class, classid, creatorid FROM curriculum as c".(user_perm()==5?" WHERE creatorid = ".$_SESSION["id"]:'').(user_perm()==1?" WHERE classid = ".$datas["classid"]:''); break;
 				
+			case 'curriculum:catInfo': 
+				return "SELECT id, name FROM curriculum_category WHERE id = ".$datas["id"]; break;
+				
 			case 'curriculum:readInfo': 
 				return "SELECT id, curriculumid, userid, last, max FROM curriculum_read WHERE curriculumid = ".$datas['curriculumid']." and userid = ".$_SESSION["id"]; break;
 				
