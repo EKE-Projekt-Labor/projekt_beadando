@@ -20,8 +20,10 @@
 
 	else if ($_GET['a']=='edit' || $_GET['a']=='new') {
 
-		#kód
-
+		if (isset($_GET['id'])) {
+			$coursecatinfo = db_query(db_sql('user:classInfo', array('id'=>$_GET['id'])))[0];
+		}
+		
 	}
 
 	/**
