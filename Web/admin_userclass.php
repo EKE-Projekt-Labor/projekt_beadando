@@ -52,7 +52,28 @@
 
 	else {
 
-		#kód
+		$coursecats = db_query(db_sql('user:classAll'));
+
+		echo '
+		<br>
+		<a href="?" class="btn btn-info">Összes</a>
+		<a href="?a=new" class="btn btn-info">Új</a>
+		<br><br>';
+
+
+		echo '<table align="center"><tr>'.
+			'<th>ID</th><th>Megenvezés</th><th>Műveletek</th></tr>';
+		foreach ($coursecats as $num => $coursecat) {
+			echo '<tr>'.
+				'<td>'.$coursecat['id'].'</td>'.
+				'<td style="text-align:left;">'.$coursecat['name'].'</td>'.
+				'<td>'.(user_perm() >= 5?
+					'<a href="?a=edit&id='.$coursecat['id'].'" class="btn btn-info">Szerk.</a>
+					<a href="?a=del&id='.$coursecat['id'].'" class="btn btn-info">Törlés</a>':'').
+				'</td>'.
+			'</tr>';
+		}
+		echo '</table>';
 
 	}
 
