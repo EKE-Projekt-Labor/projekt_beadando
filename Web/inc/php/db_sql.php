@@ -97,6 +97,11 @@
 			case 'test:delete': 
 				return ""; break;
 
+			case 'test:fillInfo':
+				return "SELECT id, testid, userid, answers, date FROM test_solved WHERE testid = ".$datas['testid']." and userid = ".$_SESSION["id"]; break;
+
+				
+
 
 			/**
 			* Tananyag
