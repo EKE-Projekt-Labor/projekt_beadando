@@ -145,6 +145,12 @@
 			case 'curriculum:catEdit': 
 				return "UPDATE curriculum_category SET name = '".$datas["name"]."' WHERE id = ".$datas["id"]; break;
 				
+			case 'curriculum:catDelete': 
+				return ""; break;
+			
+			case 'curriculum:catAll': 
+				return "SELECT id, name FROM curriculum_category"; break;
+				
 			case 'curriculum:readNew': 
 				return "INSERT INTO curriculum_read (curriculumid, userid, last, max) VALUES (".$datas['curriculumid'].", ".$datas['userid'].", ".$datas['last'].", ".$datas['max'].")"; break;
 			
