@@ -79,7 +79,11 @@
 				  <option value="5" <?php echo ($userinfo['permission']=='5'?' selected':''); ?>>5 - tanár</option>
                   <option value="9" <?php echo ($userinfo['permission']=='9'?' selected':''); ?>>9 - admin</option>
 				</select>
-		
+		 </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" name="action_<?php echo $_GET['a']; ?>" value="<?php echo ($_GET['a']=='edit'?'Mentés':'Létrehozás'); ?>">
+                <a class="btn btn-link" href="?">Mégse</a>
+            </div>
 		
 		
 		</form>
