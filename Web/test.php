@@ -17,6 +17,9 @@
             'curriculumid'=>$_POST['curriculumid']
         ]]);
     }
+    else if (isset($_POST['action_new']) && user_perm()>=5) {
+        
+    }
 	
 
     /**
