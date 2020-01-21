@@ -51,7 +51,11 @@
                 $qaas = json_decode_($testinfo['content'], JSON_OBJECT_AS_ARRAY);
             }
             ?>
-
+            <center>
+                <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px">
+                
+                </form>
+            </center>
 
 
 
