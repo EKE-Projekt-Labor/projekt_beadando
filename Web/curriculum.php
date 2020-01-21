@@ -20,6 +20,16 @@ if (isset($_POST['action_edit']) && user_perm()>=5) {
         'classid'=>$_POST['classid']
     ]]);
 }
+// Akció: létrehozás
+else if (isset($_POST['action_new']) && user_perm()>=5) {
+    action('new', ['curriculum:new', [
+        'name'=>$_POST['name'],
+        'content'=>$_POST['content'],
+        'categoryid'=>$_POST['categoryid'],
+        'creatorid'=>(user_perm()==9?$_POST['creatorid']:$_SESSION["id"]),
+        'classid'=>$_POST['classid']
+    ]]);
+}
 
 
 /**
