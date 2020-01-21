@@ -83,3 +83,20 @@ CREATE TABLE `test_solved` (
   `Answers` varchar(20000) NOT NULL,
   `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Tábla szerkezet ehhez a táblához `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `password` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `permission` tinyint(1) NOT NULL DEFAULT '0',
+  `ClassID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `user` (`id`, `username`, `password`, `created_at`, `permission`, `ClassID`) VALUES
+(1, 'admin', '$2y$10$rxSk3dfo6Y/QIGkPrOn6E.bReUxTW6ZqzlhSIFFI3/tuuru.I0Lra', '2020-01-21 12:42:00', 9, 0);
