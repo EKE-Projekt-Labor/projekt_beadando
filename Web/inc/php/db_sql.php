@@ -46,7 +46,10 @@
 	
 			case 'user:delete': 
 				return ""; break;
-				
+
+			case 'user:all': 
+				return "SELECT id, username, created_at, permission, (SELECT name FROM user_class WHERE id = u.classid) as class, classid FROM user as u".$datas['WHERE']; break;
+
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
