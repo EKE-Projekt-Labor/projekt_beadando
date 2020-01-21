@@ -42,6 +42,21 @@
 		}
 
 		$userclasss = db_query(db_sql('user:classAll'));
+		
+		?>
+
+		<center>
+		<form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width:500px"> 
+			<div class="form-group">
+                <label>Felhasználónév</label>
+                <input type="text" name="id" value="<?php echo $userinfo['id']; ?>" hidden>
+                <input type="text" name="username" class="form-control" value="<?php echo $userinfo['username']; ?>">
+            </div>
+		
+		
+		
+		</form>
+	    </center>
 
 	}
 
@@ -53,39 +68,8 @@
 
 	// Oldal: lista
 	else {
-		$users = db_query(db_sql('user:all'));
 
-		echo '
-		<br>
-		<a href="?" class="btn btn-info">Összes</a>
-		<a href="?a=new" class="btn btn-info">Új</a>
-		<br><br>';
-
-
-		echo '<table align="center"><tr>'.
-			'<th>ID</th><th>Felhasználónév</th><th>Létrehozva</th><th>Osztály</th><th>Jogosultság</th><th>Műveletek</th></tr>';
-		foreach ($users as $num => $user) {
-			echo '<tr>'.
-				'<td>'.$user['id'].'</td>'.
-				'<td style="text-align:left;">'.$user['username'].'</td>'.
-				'<td style="text-align:left;">'.$user['created_at'].'</td>'.
-				'<td>'.($user['class']==0?'-':$user['class']).'</td>'.
-				'<td style="text-align:left;">'; //.$user['permission'].' - ';
-					switch ((int)$user['permission']) {
-						case 1:  echo 'tanuló'; break;
-						case 5:  echo 'tanár'; break;
-						case 9:  echo 'adminisztrátor'; break;
-						case 0:  echo 'felhasználó'; break;
-						default: echo ''; break;
-					}
-			echo '</td>'.
-				'<td>'.((int)$user['permission'] < user_perm() || $user['id']==$_SESSION["id"] || user_perm() == 9?
-					'<a href="?a=edit&id='.$user['id'].'" class="btn btn-info"><img src="inc/img/icons/pencil.svg" alt="" width="24" height="24"></a>
-					<a href="?a=del&id='.$user['id'].'" class="btn btn-info"><img src="inc/img/icons/trash.svg" alt="" width="24" height="24"></a>':'').
-				'</td>'.
-			'</tr>';
-		}
-		echo '</table>';
+		#kód
 
 	}
 
