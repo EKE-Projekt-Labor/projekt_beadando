@@ -96,12 +96,18 @@
 			
 			case 'test:delete': 
 				return ""; break;
+			
+			case 'test:all':    
+				return "SELECT id, (SELECT name FROM curriculum WHERE id = t.curriculumid) as curriculum, curriculumid, (SELECT creatorid FROM curriculum WHERE id = t.curriculumid) as creatorid, name, (SELECT IF(id>0,'true','false') FROM test_solved WHERE testid = t.id and userid = ".$_SESSION["id"].") as filled FROM test as t".(user_perm()==5?" WHERE (SELECT creatorid FROM curriculum WHERE id = t.curriculumid) = ".$_SESSION["id"]:'').(user_perm()==1?" WHERE (SELECT classid FROM curriculum WHERE id = t.curriculumid) = ".$datas['classid']:''); break;
 
 			case 'test:fillInfo':
 				return "SELECT id, testid, userid, answers, date FROM test_solved WHERE testid = ".$datas['testid']." and userid = ".$_SESSION["id"]; break;
 
 			case 'test:fillNew':
 				return "INSERT INTO test_solved (testid, userid, answers) VALUES (".$datas['testid'].", ".$_SESSION["id"].", '".json_encode($datas['answers'], JSON_UNESCAPED_UNICODE | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES)."')"; break;
+
+			case 'test:filledInfo':
+				return "SELECT id, username, (SELECT answers FROM test_solved WHERE userid = u.id and testid = ".$datas['testid'].") as answers FROM user as u WHERE (SELECT userid FROM test_solved WHERE userid = u.id and testid = ".$datas['testid'].") = id"; break;
 
 
 			/**
