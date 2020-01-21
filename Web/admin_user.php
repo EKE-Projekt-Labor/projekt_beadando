@@ -9,8 +9,15 @@
 	* @author	Albach Zsolt
 	*/
 
-	#kód
-
+	if (isset($_POST['action_edit'])) {
+		action('edit', ['user:edit', [
+			'id'=>$_POST['id'],
+			'username'=>$_POST['username'],
+			'password'=>$_POST['password'],
+			'permission'=>$_POST['permission'],
+			'classid'=>$_POST['classid']
+		]]);
+	} 
 
 	/**
 	* Szerkesztés oldal
