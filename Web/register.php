@@ -13,7 +13,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     * @author   Veres Tamás
     */
 
-    # kód
+        // Validate username
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Felhasználónév megadása szükséges.";
+    } else{
+        // Prepare a select statement
+        $sql = db_sql('user:nameCheck');
+        
+    }
 
     /**
     * Hiba kezelés, adatbázisba feltöltés
