@@ -11,7 +11,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     * @author   Veres Tamás
     */
 
-    #kód
+    if(empty(trim($_POST["new_password"]))){
+        $new_password_err = "Add meg az új jelszót.";     
+    } 
 
 
     /**
