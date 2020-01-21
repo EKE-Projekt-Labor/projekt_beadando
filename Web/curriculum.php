@@ -102,6 +102,17 @@ echo '<a href="'.($lapozasElore?$lapozas_url.$next:'#').'" class="btn btn-'.($la
                   ?>
                 </select>
             </div>
+			<div class="form-group">
+                <label>Osztály</label>
+                <select class="form-control" name="classid">
+                  <option value="0">-</option>
+                  <?php
+                  	foreach ($userclasss as $userclass) {
+                  		echo '<option value="'.$userclass['id'].'"'.($userclass['id']==$curriculuminfo['classid']?' selected':'').'>'.$userclass['name'].'</option>'."\n";
+                  	}
+                  ?>
+                </select>
+            </div>
 		
 		
 		
