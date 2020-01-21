@@ -37,7 +37,11 @@
 	// Oldal: új/szerkesztés
 	else if ($_GET['a']=='edit' || $_GET['a']=='new') {
 
-		#kód
+		if (isset($_GET['id'])) {
+			$userinfo = db_query(db_sql('user:info', array('id'=>$_GET['id'])))[0];
+		}
+
+		$userclasss = db_query(db_sql('user:classAll'));
 
 	}
 
