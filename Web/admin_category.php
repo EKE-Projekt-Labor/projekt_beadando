@@ -9,10 +9,12 @@
 	* @author	Albach Zsolt
 	*/
 
-	#kód
+if (isset($_POST['action_edit'])) {
+   
+}
 
 
-	/**
+/**
 	* Szerkesztés oldal
 	*
 	* @author	Eszényi Tamás
