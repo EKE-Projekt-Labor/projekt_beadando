@@ -75,6 +75,9 @@
 			#
 			case 'curriculum:info': 
 				return "SELECT id, name, content, (SELECT name FROM curriculum_category WHERE id = c.categoryid) as category, categoryid, creatorid, classid FROM curriculum as c WHERE id = ".$datas["id"]; break;
+				
+			case 'curriculum:new': 
+				return "INSERT INTO curriculum (name, content, categoryid, creatorid) VALUES ('".$datas['name']."', '".$datas['content']."', ".$datas['categoryid'].", ".$datas['creatorid'].", ".$datas['classid'].")"; break;
 
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
