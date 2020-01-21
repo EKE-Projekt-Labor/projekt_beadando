@@ -9,10 +9,21 @@
 	* @author	Albach Zsolt
 	*/
 
-	#kód
+if (isset($_POST['action_edit'])) {
+    action('edit', ['curriculum:catEdit', [
+        'id'=>$_POST['id'],
+        'name'=>$_POST['name']
+    ]]);
+}
+// Akció: létrehozás
+else if (isset($_POST['action_new'])) {
+    action('new', ['curriculum:catNew', [
+        'name'=>$_POST['name']
+    ]]);
+}
 
 
-	/**
+/**
 	* Szerkesztés oldal
 	*
 	* @author	Eszényi Tamás
@@ -35,5 +46,8 @@
 		#kód
 
 	}
+
+	// HTML lábléc
+    echo html_footer();
 
 ?>
