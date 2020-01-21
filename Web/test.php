@@ -10,7 +10,12 @@
     */
 
 	if(isset($_POST['action_edit']) && user_perm()>=5){
-
+        action('edit', ['test:edit', [
+            'id'=>$_POST['id'],
+            'name'=>$_POST['name'],
+            'content'=>$_POST['content'],
+            'curriculumid'=>$_POST['curriculumid']
+        ]]);
     }
 	
 
