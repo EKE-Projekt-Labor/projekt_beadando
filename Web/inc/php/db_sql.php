@@ -38,6 +38,9 @@
 			case 'user:info': 
 				return "SELECT id, username, permission, (SELECT name FROM user_class WHERE id = u.classid) as class, classid FROM user as u WHERE id = ".$datas["id"]; break;
 			
+			case 'user:new': 
+				return "INSERT INTO user (username, password, permission, classid) VALUES ('".$datas["username"]."', '".password_hash($datas['password'], PASSWORD_DEFAULT)."', ".$datas["permission"].", ".((int)$datas["permission"]==1?$datas["classid"]:'0').")"; break;
+	
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
