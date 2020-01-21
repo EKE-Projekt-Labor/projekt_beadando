@@ -9,7 +9,9 @@
     * @author   Albach Zsolt
     */
 
-	#kód
+	if(isset($_POST['action_edit']) && user_perm()>=5){
+
+    }
 	
 
     /**
