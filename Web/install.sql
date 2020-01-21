@@ -100,3 +100,14 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `created_at`, `permission`, `ClassID`) VALUES
 (1, 'admin', '$2y$10$rxSk3dfo6Y/QIGkPrOn6E.bReUxTW6ZqzlhSIFFI3/tuuru.I0Lra', '2020-01-21 12:42:00', 9, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `user_class`
+--
+
+CREATE TABLE `user_class` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
