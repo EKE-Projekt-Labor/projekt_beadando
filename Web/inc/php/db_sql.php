@@ -53,6 +53,9 @@
 			case 'user:classInfo': 
 				return "SELECT id, name FROM user_class WHERE id = ".$datas["id"]; break;
 
+			case 'user:classNew': 
+				return "INSERT INTO user_class (name) VALUES ('".$datas['name']."')"; break;
+
 			case 'user:nameCheck': 
 				return "SELECT id FROM user WHERE username = ?"; break; 
 			
