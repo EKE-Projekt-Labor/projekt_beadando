@@ -93,6 +93,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 * @author   Veres Tamás
 */
 
-# kód
+echo html_header('Regisztráció');
 
+?>
+
+        <p>Fiók regisztrálásához töltsd ki az alábbi űrlapot.</p>
+        <form class="c" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Felhasználónév</label>
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <span class="help-block"><?php echo $username_err; ?></span>
+            </div>    
+
+<?php
+    echo html_footer();
 ?>
