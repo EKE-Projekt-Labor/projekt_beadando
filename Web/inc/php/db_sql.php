@@ -29,8 +29,21 @@
 			# case 'user:megnev': 
 			#	return "sql-utasítás"; break;
 			#
+			case 'user:permission': 
+				return "SELECT permission FROM user WHERE id = ".$_SESSION["id"]; break;
 
-
+			case 'user:nameCheck': 
+				return "SELECT id FROM user WHERE username = ?"; break; 
+			
+			case 'user:newReg': 
+				return "INSERT INTO user (username, password) VALUES (?, ?)"; break; 
+	
+			case 'user:login': 
+				return "SELECT id, username, password FROM user WHERE username = ?"; break; 
+	
+			case 'user:passNew': 
+				return "UPDATE user SET password = ? WHERE id = ?"; break; 
+	
 			/**
 			* Teszt
 			* test (id, curriculumid, name, content)
