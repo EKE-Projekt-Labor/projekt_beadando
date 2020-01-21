@@ -81,7 +81,10 @@
 				
 			case 'curriculum:edit': 
 				return "UPDATE curriculum SET name = '".$datas["name"]."', content = '".$datas["content"]."', categoryid = ".$datas["categoryid"].(user_perm()==9?", creatorid=".$datas["creatorid"]:'').", classid = ".$datas["classid"]." WHERE id = ".$datas["id"]; break;
-
+				
+			case 'curriculum:delete': 
+				return ""; break;
+				
 			/**
 			* Ha egyik se, akkor üreset adunk vissza.
 			*/
