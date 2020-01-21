@@ -70,7 +70,26 @@
                     </div>
                     <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                         <label>Kérdések és válaszok</label>
-                        
+                        <?php
+                        $qaas = (isset($qaas)?$qaas:[1=>null,2,3,4,5,6,7,8,9,10]); // JAVÍTANDÓ!!!!
+                        foreach ($qaas as $key => $qaa) {
+                            $i = $key;
+
+                            echo '<div class="qb" style="text-align: center;">';
+                            echo $i.'. <input type="text" name="content['.$i.'][q]" class="form-control" value="'.$qaa['q'].'"><br>';
+                            echo '<input type="radio" name="content['.$i.'][a]" value="1"'.($qaa['a']=='1'?' checked':'').'>';
+                            echo '<input type="text" name="content['.$i.'][a1]" class="form-control" value="'.$qaa['a1'].'">';
+                            echo '<input type="radio" name="content['.$i.'][a]" value="2"'.($qaa['a']=='2'?' checked':'').'>';
+                            echo '<input type="text" name="content['.$i.'][a2]" class="form-control" value="'.$qaa['a2'].'"><br>';
+                            echo '<input type="radio" name="content['.$i.'][a]" value="3"'.($qaa['a']=='3'?' checked':'').'>';
+                            echo '<input type="text" name="content['.$i.'][a3]" class="form-control" value="'.$qaa['a3'].'">';
+                            echo '<input type="radio" name="content['.$i.'][a]" value="4"'.($qaa['a']=='4'?' checked':'').'>';
+                            echo '<input type="text" name="content['.$i.'][a4]" class="form-control" value="'.$qaa['a4'].'">';
+                            echo '</div>';
+
+                        }
+
+                        ?>
                     </div>
                 </form>
             </center>
