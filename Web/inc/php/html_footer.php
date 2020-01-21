@@ -11,4 +11,19 @@
 	* @return	string	Lábléc.
 	*/
 
+	function html_footer ($data=null) {
+
+		return
+<<<HTML
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+HTML;
+
+	}
+
 ?>
