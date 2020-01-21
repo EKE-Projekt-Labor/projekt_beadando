@@ -24,6 +24,14 @@
 			$coursecatinfo = db_query(db_sql('user:classInfo', array('id'=>$_GET['id'])))[0];
 		}
 		
+		?>
+
+		<center>
+
+    	</center>
+
+		<?php
+		
 	}
 
 	/**
