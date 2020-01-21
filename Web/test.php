@@ -32,7 +32,11 @@
 
 	else if ($_GET['a']=='fill') {
 
-		#kód
+        $testinfo = db_query(db_sql('test:info', array('id'=>$_GET['id'])))[0];
+		$curriculuminfo = db_query(db_sql('curriculum:info', array('id'=>$testinfo['curriculumid'])))[0]; // tananyag
+		$classid = db_query(db_sql('user:classid'),false); // osztály
+		$curriculumread = db_query(db_sql('curriculum:readInfo', array('curriculumid'=>$testinfo['curriculumid'])))[0]; // hanyadik oldalnál jár?
+		$testfillinfo = db_query(db_sql('test:fillInfo',array('testid'=>$_GET['id'])))[0]; // hanyadik oldalnál jár?
 
 	}
 
