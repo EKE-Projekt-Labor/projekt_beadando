@@ -24,6 +24,6 @@
 | TEST_009  | A bejelentkező felület kipróbálása helytelen adatokkal | Sikertelen bejelentkezés, hiba jelzése |  |
 | TEST_010  | A bejelentkező felület kipróbálása nem létező felhasználói adatokkal | Sikertelen bejelentkezés, nem létező felhasználó jelzése |  |
 | TEST_011  | A tananyagok oldal elérése | A felület legyen elérhető |  |
-| TEST_012  | A tananyag kipróbálása | A tananyag legyen olvasható/szerkeszthető |  |
+| TEST_012  | A tananyag kipróbálása | A tananyag legyen olvasható/szerkeszthető (felhasználótól függően) |  |
 | TEST_014  | A tesztek oldal elérése | A felület legyen elérhető |  |
-| TEST_015  | A tesztek kipróbálása | A tesztet lehessen kitölteni/szerkeszteni |  |
+| TEST_015  | A tesztek kipróbálása | A tesztet lehessen kitölteni/szerkeszteni (felhasználótól függően) |  |
