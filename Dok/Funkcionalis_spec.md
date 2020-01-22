@@ -38,7 +38,37 @@ Tanulók álatal elérhető funkciók
 
 
 ## Használati esetek
-xx
+
+Szereplők:
+
+ Adminisztrátor
+ Tanár
+ Diák
+
+Tevékenységek:
+
+Tanár:
+- Regisztráció
+- Bejelentkezés tanárként
+- Tananyagok létrehozása, szerkesztése és törlése
+- Tananyag kategóriák szerkesztése
+- Osztályok létrehozása
+- Felhasználók jogainak menedzselése
+- Jelszó változtatása
+
+Adminisztrátor:
+
+
+Minden fentebb említett 'Tanár' joggal rendelkezik.
+ - Adminisztrátor oszthat ki Tanár státuszt.
+
+Diák:
+ - Regisztráció
+ - Bejelentkezés diákként
+ - Tananyag megtekintése
+ - Tesztek megoldása
+ - Statisztikák megtekintése
+ - Jelszó változtatása
 
 ## Képernyőtervek
 
