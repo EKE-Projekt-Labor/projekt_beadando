@@ -10,7 +10,7 @@
 - Operációs rendszer: __OS__ __OSVER__ (00 bit) 
 - Böngésző: __BONGESZO__ __BONGVER__ (00 bit)
 
-## Tesztekesetek:
+## Tesztesetek:
 
 | Azonosító | Teszt leírása | Elvárt viselkedés | Eredmény |
 |-----------|---------------|-------------------|----------|
