@@ -7,7 +7,15 @@
 xx
 
 ## Jelenlegi helyzet
-xx
+
+A program az oktatás jelenlegi problémáit kerülve egy sokkal inkább interaktívabb és rugalmasabb tanulást biztosít a tanulók számára akár az iskola keretein kívül is.
+
+A felmerülő problémák megoldásai:
+
+a diákok az igényeikhez mérten tudják használni
+interaktív és játékos számonkérés a tananyagokat követően
+modern, aktuális technológiákat használó igényes rendszer
+Így egy modernebb gondolatú, a gyerekek számára interaktívabb, amit bárhol és bármikor tudnak használni a tanuláshoz.
 
 ## Követelménylista
 
