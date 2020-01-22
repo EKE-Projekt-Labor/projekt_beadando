@@ -5,6 +5,16 @@
 
 ## Jelenlegi helyzet
 
+Nem az iskolák alakítják ki a tanrendet akik a tanulók érdekeit tartják szem előtt.
+
+Jelenleg az oktatás:
+
+Szigorú a diákokhoz.
+A tanárok nem tudnák párhuzamosan foglalkozni a diákokkal.
+Nincs lehetőség a diákok egyéni igényeihez igazodni.
+Lexikális tudásközpontú, stresszes, nem motiváló, nem játékos.
+Elméleti alapú, nagyon kevés gyakorlattal.
+Sokszor elavult módszereket használó.
 
 ## Vágyálomrendszer
 Egy olyan tanulást elősegítő platform létrehozása, ahol a tanuló az ismeretanyagot digitális formában sajátítja el. A tananyagok feltöltése egy adminisztrációs felületen keresztül történik. A tesztekhez való feladatok (és válaszok) is ezen a felületen hozhatók létre. Az érétékelés automatikus, a beküldést követeően azonnal látható mind a tanuló, mind a tanár számára.
