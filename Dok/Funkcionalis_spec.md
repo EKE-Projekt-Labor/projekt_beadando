@@ -83,7 +83,10 @@ A weboldalbetöltése után a Tananyagok menüre kattintva egyből elérhetővé
 A menü sorban helyet kap a bejelentkezés rész is. 
 
 ## Forgatókönyvek
-xx
+Regisztráció: Az applikáció elindítása után, a kezdőképernyőn a Regisztráció gomb segítségével tudunk regisztrálni.
+A gomb lenyomása után megadhatjuk adatainkat (Felhasználónév, Jelszó, Jelszó megerősítése), majd a Regisztráció gomb megnyomásával, amennyiben helyes adatokat adtunk meg,
+a Bejelentkezés oldal fogad minket, melyet a kért adatok kitöltésével megvalósíthatunk,  belépünk a rendszerbe.
+
 
 ## Fogalomszótár
 xx
