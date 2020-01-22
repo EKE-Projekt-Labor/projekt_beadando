@@ -83,10 +83,23 @@ A weboldalbetöltése után a Tananyagok menüre kattintva egyből elérhetővé
 A menü sorban helyet kap a bejelentkezés rész is. 
 
 ## Forgatókönyvek
+
 Regisztráció: Az applikáció elindítása után, a kezdőképernyőn a Regisztráció gomb segítségével tudunk regisztrálni.
 A gomb lenyomása után megadhatjuk adatainkat (Felhasználónév, Jelszó, Jelszó megerősítése), majd a Regisztráció gomb megnyomásával, amennyiben helyes adatokat adtunk meg,
 a Bejelentkezés oldal fogad minket, melyet a kért adatok kitöltésével megvalósíthatunk,  belépünk a rendszerbe.
 
+Bejelentkezés: Az oldal elindítás után, a navigációs sávon a Bejelentkezés gomb segítségével tudunk belépni a fiókunkba, amennyiben már előtte regisztráltunk egyet.
+A gomb lenyomása után megadhatjuk a bejelentkezéshez szükséges adataink (Felhasználónév, Jelszó), és amennyiben helyes adatokat adtunk meg, úgy a Bejelentkezés gomb lenyomásával
+ sikeresen beléphetünk a fiókunkba.
+ 
+Tananyag kiválasztása:
+ Sikeres bejelentkezést követően, a navigációs sáv  bal oldalán választhatunk a tananyagok és a tesztek között.
+ Diák esetén csak olvasás és teszt kitöltési lehetőséggel.
+ Tanár esetén ezek módsítására is van lehetőség. 
+ Tananyagok alatt kategóriánként (Magyar irodalom, Történelem, Matek, stb.) láthatjuk felsorolva az adott anyagokat. A megnézéséhez, csupán rákell nyomni az általunk kiválasztott 
+ tananyagra.
 
-## Fogalomszótár
-xx
+Tesztek kiválasztása
+ Navigációs sávon a tesztek menü pont alatt választhatjuk ki a tesztek menüt ahol a tanárok által feltöltött kérdés sorokra adhatunk választ.
+ Kitöltés után az eredményeket megtekinthetjük.
+ 
