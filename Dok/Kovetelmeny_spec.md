@@ -45,11 +45,22 @@ A tananyag és a számonkérés is mindvégig egy online platformon zajlik, ami 
 A feladatok is rendelkezzenek felhasználókra szabott pontszámozással.
 
 ## Funkcionális követelmények
-xx
+
+Felhasználói lehetőségek
+
+Ki és bejelentkeztetési lehetőség illetve regisztráció (diák jogot az oktató vagy adminisztrátor tud adni).
+Személyes előrehaladás áttekintése (tesztek kitöltése és eredmény megtekintése).
+Hozzáférés az adott osztály/tanulók számára létrehozott tananyaghoz.
+Jelszóváltoztatási lehetőség
+
+Oktatási lehetőségek
+
+A webes felület révén hozzáférés a különböző tananyagokhoz az iskolai kereteken kívül is.
+Digitális oktatási lehetőséget nyit, elősegíti a fiatal diákoknál a digitális tanulási lehetőségek felismerését.
+Teszt lehetőségek.
+
+Teszek esetén: kvíz (feleletválasztás) feladatok elérhetőek az egyszerű és stressz mentes számonkérés érdekében.
 
 ## Követelménylista
 1. A tananyagok feltölthetőek legyenek a tanárok által és ezt a regisztrált tanuló elérhesse. Ezt a tananyagot a tanárok bármikor módosíthassák.
 2. A diákok egy regisztrációt követően a tananyagból készült kérdésekre válaszolhatnak egy egyszerű felelet választós rendszerben ellenőrizhetik a tudásukat.
-
-## Fogalomszótár
-xx
