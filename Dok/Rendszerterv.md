@@ -205,7 +205,7 @@ Nem elég egyszer, egyfajta adattal kipróbálni. Gondolni kell a hibásan megad
 Ellenőrizni kell, hogy ahol hibák jöhetnek elő ott azok megfelelően levannak-e kezelve.
 A felhasználóhoz nem juthat vissza működési hiba.
 
-Tesztesetek:
+### Tesztesetek:
 
 | Azonosító | Teszt leírása | Elvárt viselkedés |
 |-----------|---------------|-------------------|
@@ -219,11 +219,9 @@ Tesztesetek:
 | TEST_009  | A bejelentkező felület kipróbálása helytelen adatokkal | Sikertelen bejelentkezés, hiba jelzése |
 | TEST_010  | A bejelentkező felület kipróbálása nem létező felhasználói adatokkal | Sikertelen bejelentkezés, nem létező felhasználó jelzése |
 | TEST_011  | A tananyagok oldal elérése |  A felület legyen elérhető |
-| TEST_012  | A tananyag kipróbálása |  |
+| TEST_012  | A tananyag kipróbálása | A tananyag legyen olvasható |
 | TEST_014  | A tesztek oldal elérése |  A felület legyen elérhető |
-| TEST_015  | A tesztek kipróbálása |  |
-| TEST_016  |  |  |
-| TEST_017  |  |  |
+| TEST_015  | A tesztek kipróbálása | A tesztet lehessen kitölteni |
 
 
 ## 12. Telepítési terv
