@@ -4,7 +4,14 @@
  Megrendlő részéről kaptunk egy olyan elképezlt weboldalt amely segíti a munkájukat, hogy a diákoknak könnyebben átadhassák a megfelelő tudusát és minnél több diákhoz elérjen a tananyag.
 
 ## Célok
-xx
+A weboldal esetlőges célja az oktatás.
+Mindezt kontrolált körülmények között. Bár a diákok szabadon választhassanak a tananyagok között, azonban a tanárok ezt tudják felügyeléni és ellenőrizni az elvégzett tananyagokat
+milyen minőségben sikerült elsajátítani - tesztek formájában.
+Az oldal hozzáféréséhez regisztrációra van szükség. - ez által a tanárok ellenőrizhetik ki mennyi időt töltött az oldalon és egy-egy tananyag elsajátításával.
+A különböző tipusu felahsználók különböző jogosultságokkal bírjanak.
+Diák: olvashat és tesztet tölthet ki
+Tanár:Új tananyagot és tesztet adhat hozzá
+Admin: A fentieken túl Ő álítja be a regisztrált user melyik csoportba milyen tulajdonságokkal rendelkezzenek.
 
 ## Jelenlegi helyzet
 
