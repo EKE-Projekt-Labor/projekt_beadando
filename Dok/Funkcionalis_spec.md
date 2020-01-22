@@ -4,7 +4,14 @@
  Megrendlő részéről kaptunk egy olyan elképezlt weboldalt amely segíti a munkájukat, hogy a diákoknak könnyebben átadhassák a megfelelő tudusát és minnél több diákhoz elérjen a tananyag.
 
 ## Célok
-xx
+A weboldal esetlőges célja az oktatás.
+Mindezt kontrolált körülmények között. Bár a diákok szabadon választhassanak a tananyagok között, azonban a tanárok ezt tudják felügyeléni és ellenőrizni az elvégzett tananyagokat
+milyen minőségben sikerült elsajátítani - tesztek formájában.
+Az oldal hozzáféréséhez regisztrációra van szükség. - ez által a tanárok ellenőrizhetik ki mennyi időt töltött az oldalon és egy-egy tananyag elsajátításával.
+A különböző tipusu felahsználók különböző jogosultságokkal bírjanak.
+Diák: olvashat és tesztet tölthet ki
+Tanár:Új tananyagot és tesztet adhat hozzá
+Admin: A fentieken túl Ő álítja be a regisztrált user melyik csoportba milyen tulajdonságokkal rendelkezzenek.
 
 ## Jelenlegi helyzet
 
@@ -76,7 +83,23 @@ A weboldalbetöltése után a Tananyagok menüre kattintva egyből elérhetővé
 A menü sorban helyet kap a bejelentkezés rész is. 
 
 ## Forgatókönyvek
-xx
 
-## Fogalomszótár
-xx
+Regisztráció: Az applikáció elindítása után, a kezdőképernyőn a Regisztráció gomb segítségével tudunk regisztrálni.
+A gomb lenyomása után megadhatjuk adatainkat (Felhasználónév, Jelszó, Jelszó megerősítése), majd a Regisztráció gomb megnyomásával, amennyiben helyes adatokat adtunk meg,
+a Bejelentkezés oldal fogad minket, melyet a kért adatok kitöltésével megvalósíthatunk,  belépünk a rendszerbe.
+
+Bejelentkezés: Az oldal elindítás után, a navigációs sávon a Bejelentkezés gomb segítségével tudunk belépni a fiókunkba, amennyiben már előtte regisztráltunk egyet.
+A gomb lenyomása után megadhatjuk a bejelentkezéshez szükséges adataink (Felhasználónév, Jelszó), és amennyiben helyes adatokat adtunk meg, úgy a Bejelentkezés gomb lenyomásával
+ sikeresen beléphetünk a fiókunkba.
+ 
+Tananyag kiválasztása:
+ Sikeres bejelentkezést követően, a navigációs sáv  bal oldalán választhatunk a tananyagok és a tesztek között.
+ Diák esetén csak olvasás és teszt kitöltési lehetőséggel.
+ Tanár esetén ezek módsítására is van lehetőség. 
+ Tananyagok alatt kategóriánként (Magyar irodalom, Történelem, Matek, stb.) láthatjuk felsorolva az adott anyagokat. A megnézéséhez, csupán rákell nyomni az általunk kiválasztott 
+ tananyagra.
+
+Tesztek kiválasztása
+ Navigációs sávon a tesztek menü pont alatt választhatjuk ki a tesztek menüt ahol a tanárok által feltöltött kérdés sorokra adhatunk választ.
+ Kitöltés után az eredményeket megtekinthetjük.
+ 
