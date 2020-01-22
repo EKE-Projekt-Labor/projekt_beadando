@@ -63,11 +63,15 @@ Az egyes feladatokat pedig Trello-ban követjük.
   
   - Tesztek feltöltése:
   
-    - Lehetőséget biztosit ellenőrző kérdések "Tesztek" létrehozása. 
+    - Lehetőséget biztosit ellenőrző kérdések "Tesztek" létrehozása. A teszek feltöltéséhez jogosultság szükséges. A tesztekhez kérdés-válasz-megoldás hármasokat használva alakíthatunk ki egy teljes kérdés sort.
   
   - Tesztek megírása:
   
+    - Lehetséges, a oktató anyagok elolvasás után az előre definiált teszteket megírni. 
+  
   - Tesztek eredménye:
+  
+    - A tesztek megírása után értékelés látható a tesz végéről. 
 
 ## 4. Követelmények
 
